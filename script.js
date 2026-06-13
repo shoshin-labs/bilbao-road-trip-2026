@@ -7,9 +7,9 @@ function money(n){ return typeof n === 'number' ? `£${n.toLocaleString('en-GB')
 function priceMarkup(item){
   if(typeof item.priceNightGbp === 'number'){
     const total = typeof item.priceTotalGbp === 'number' ? `${money(item.priceTotalGbp)} total · ` : '';
-    return `<div class="price"><b>${money(item.priceNightGbp)}/night</b><span>${total}${item.priceLabel || item.priceStatus || 'Exact-date price captured'}</span></div>`;
+    return `<div class="price"><b>${money(item.priceNightGbp)}/night</b><span>${total}${item.priceLabel || item.priceStatus || 'Price for our dates'}</span></div>`;
   }
-  return `<div class="price muted"><b>Price: check live</b><span>${item.priceStatus || 'Exact-date price not captured yet from this provider.'}</span></div>`;
+  return `<div class="price muted"><b>Price for our dates: check live</b><span>${item.priceStatus || 'Open the provider link to confirm the live 2-guest price for our stay dates.'}</span></div>`;
 }
 function passesFilters(item){
   const stopOk = state.stop === 'all' || item.stop === state.stop;
@@ -23,7 +23,7 @@ function render(){
   const resultCount = document.getElementById('resultCount');
   if(resultCount){
     const priced = filtered.filter(x=>typeof x.priceNightGbp === 'number').length;
-    resultCount.textContent = `${filtered.length} listing${filtered.length===1?'':'s'} shown · ${priced} with exact-date price captured`;
+    resultCount.textContent = `${filtered.length} listing${filtered.length===1?'':'s'} shown · ${priced} priced for our dates`;
   }
   filtered.forEach((item)=>{
     const el=document.createElement('article');

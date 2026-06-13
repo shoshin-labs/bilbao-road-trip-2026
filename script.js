@@ -2,16 +2,40 @@
 const cards = document.getElementById('cards');
 const data = window.ACCOMMODATIONS || [];
 const stopLabels = {"la-rochelle":"La Rochelle", bilbao:"Bilbao", bordeaux:"Bordeaux"};
-function render(filter='all'){
+const state = { stop: 'all', provider: 'all', priceBand: 'all' };
+function money(n){ return typeof n === 'number' ? `£${n.toLocaleString('en-GB')}` : 'Check live'; }
+function priceMarkup(item){
+  if(typeof item.priceNightGbp === 'number'){
+    const total = typeof item.priceTotalGbp === 'number' ? `${money(item.priceTotalGbp)} total · ` : '';
+    return `<div class="price"><b>${money(item.priceNightGbp)}/night</b><span>${total}${item.priceLabel || item.priceStatus || 'Exact-date price captured'}</span></div>`;
+  }
+  return `<div class="price muted"><b>Price: check live</b><span>${item.priceStatus || 'Exact-date price not captured yet from this provider.'}</span></div>`;
+}
+function passesFilters(item){
+  const stopOk = state.stop === 'all' || item.stop === state.stop;
+  const providerOk = state.provider === 'all' || item.provider === state.provider || (state.provider === 'Official' && ['Official','Accor'].includes(item.provider));
+  const priceOk = state.priceBand === 'all' || (typeof item.priceNightGbp === 'number' && item.priceNightGbp >= 100 && item.priceNightGbp <= 300);
+  return stopOk && providerOk && priceOk;
+}
+function render(){
   cards.innerHTML='';
-  data.filter(x=>filter==='all'||x.stop===filter).forEach((item, idx)=>{
+  const filtered = data.filter(passesFilters);
+  const resultCount = document.getElementById('resultCount');
+  if(resultCount){
+    const priced = filtered.filter(x=>typeof x.priceNightGbp === 'number').length;
+    resultCount.textContent = `${filtered.length} listing${filtered.length===1?'':'s'} shown · ${priced} with exact-date price captured`;
+  }
+  filtered.forEach((item)=>{
     const el=document.createElement('article');
     el.className='accom-card';
     el.dataset.stop=item.stop;
+    el.dataset.provider=item.provider || 'Unknown';
+    if(typeof item.priceNightGbp === 'number') el.dataset.priceNight=item.priceNightGbp;
     const links=Object.entries(item.links||{}).map(([label,url])=>`<a href="${url}" target="_blank" rel="noreferrer">${label}</a>`).join('');
     el.innerHTML=`
       <div class="card-top"><div><div class="city">${stopLabels[item.stop]} · ${item.area}</div><h3>${item.name}</h3></div><span class="rank">${item.rank}</span></div>
-      <div class="meta"><span>${item.type}</span><span>${item.score}</span></div>
+      <div class="meta"><span>${item.provider || 'Provider TBC'}</span><span>${item.type}</span><span>${item.score}</span></div>
+      ${priceMarkup(item)}
       <p>${item.fit}</p>
       <div class="signal"><b>Terrace / outdoor</b>${item.outdoor}</div>
       <div class="signal"><b>Parking</b>${item.parking}</div>
@@ -29,7 +53,19 @@ render();
 document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{
   document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
-  render(btn.dataset.filter);
+  state.stop = btn.dataset.filter;
+  render();
+}));
+document.querySelectorAll('.provider-filter').forEach(btn=>btn.addEventListener('click',()=>{
+  document.querySelectorAll('.provider-filter').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  state.provider = btn.dataset.provider;
+  render();
+}));
+document.querySelectorAll('.price-filter').forEach(btn=>btn.addEventListener('click',()=>{
+  const active = btn.classList.toggle('active');
+  state.priceBand = active ? btn.dataset.price : 'all';
+  render();
 }));
 const checks=document.querySelectorAll('[data-check]');
 checks.forEach(input=>{

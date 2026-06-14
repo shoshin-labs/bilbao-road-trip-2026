@@ -76,6 +76,7 @@ document.querySelectorAll('.price-filter').forEach(btn=>btn.addEventListener('cl
 }));
 const checks=document.querySelectorAll('[data-check]');
 checks.forEach(input=>{
+  if(input.disabled) return;
   const key='bilbao-trip-check-'+input.dataset.check;
   input.checked=localStorage.getItem(key)==='1';
   input.addEventListener('change',()=>localStorage.setItem(key,input.checked?'1':'0'));

@@ -9,7 +9,7 @@ function priceMarkup(item){
     const total = typeof item.priceTotalGbp === 'number' ? `${money(item.priceTotalGbp)} total · ` : '';
     return `<div class="price"><b>${money(item.priceNightGbp)}/night</b><span>${total}${item.priceLabel || item.priceStatus || 'Price for our dates'}</span></div>`;
   }
-  return `<div class="price muted"><b>Price for our dates: check live</b><span>${item.priceStatus || 'Open the provider link to confirm the live 2-guest price for our stay dates.'}</span></div>`;
+  return '';
 }
 function hasProvider(item, provider){
   if(provider === 'all') return true;

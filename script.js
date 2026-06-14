@@ -11,9 +11,16 @@ function priceMarkup(item){
   }
   return `<div class="price muted"><b>Price for our dates: check live</b><span>${item.priceStatus || 'Open the provider link to confirm the live 2-guest price for our stay dates.'}</span></div>`;
 }
+function hasProvider(item, provider){
+  if(provider === 'all') return true;
+  const primary = item.provider || '';
+  const links = item.links || {};
+  if(provider === 'Official') return ['Official','Accor'].includes(primary) || Boolean(links.Official || links.Accor);
+  return primary === provider || Object.prototype.hasOwnProperty.call(links, provider);
+}
 function passesFilters(item){
   const stopOk = state.stop === 'all' || item.stop === state.stop;
-  const providerOk = state.provider === 'all' || item.provider === state.provider || (state.provider === 'Official' && ['Official','Accor'].includes(item.provider));
+  const providerOk = hasProvider(item, state.provider);
   const priceOk = state.priceBand === 'all' || (typeof item.priceNightGbp === 'number' && item.priceNightGbp >= 100 && item.priceNightGbp <= 300);
   return stopOk && providerOk && priceOk;
 }

@@ -18,14 +18,21 @@ const photoCards = [
   {
     image: 'assets/guggenheim.svg',
     title: 'Guggenheim day',
-    text: 'Do the museum properly, then stay by the river for coffee, lunch, or a slow wander.',
+    text: 'Start with the museum, then stay on the Abandoibarra riverfront for coffee, a lunch stop, or a slow wander.',
     cta: 'Open Guggenheim map',
     href: 'https://www.google.com/maps/search/?api=1&query=Guggenheim+Museum+Bilbao'
   },
   {
+    image: 'assets/city.svg',
+    title: 'Gallery loop',
+    text: 'Use Museo de Bellas Artes, Azkuna Zentroa, and Rekalde for a slower art day between the Guggenheim and the river.',
+    cta: 'Find Bilbao galleries',
+    href: 'https://www.google.com/maps/search/?api=1&query=Museo+de+Bellas+Artes+de+Bilbao+Azkuna+Zentroa+Rekalde'
+  },
+  {
     image: 'assets/beach.svg',
-    title: 'Beach day',
-    text: 'Head to Getxo, Plentzia, Sopelana, or San Juan de Gaztelugatxe if you want a fuller coastal day.',
+    title: 'Coast day',
+    text: 'Use Getxo, Ereaga beach, Plentzia, or Sopelana for an easy seaside day and a lunch that becomes part of the outing.',
     cta: 'Open beach ideas',
     href: 'https://www.google.com/maps/search/?api=1&query=Bilbao+beach+day+Getxo+Plentzia+Sopelana'
   },

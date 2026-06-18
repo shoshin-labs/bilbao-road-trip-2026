@@ -161,6 +161,13 @@ const photoCards = [
     href: 'https://www.google.com/maps/search/?api=1&query=Guggenheim+Museum+Bilbao'
   },
   {
+    image: '../assets/city.svg',
+    title: 'Gallery loop',
+    text: 'Use Museo de Bellas Artes, Azkuna Zentroa, and Rekalde for a slower art day between the Guggenheim and the river.',
+    cta: 'Find Bilbao galleries',
+    href: 'https://www.google.com/maps/search/?api=1&query=Museo+de+Bellas+Artes+de+Bilbao+Azkuna+Zentroa+Rekalde'
+  },
+  {
     image: '../assets/beach.svg',
     title: 'Coast day',
     text: 'Use Getxo, Ereaga beach, Plentzia, or Sopelana for an easy seaside day and a lunch that becomes part of the outing.',

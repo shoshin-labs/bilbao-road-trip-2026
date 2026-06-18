@@ -695,23 +695,23 @@ img{max-width:100%;display:block}
   min-width:72px;
   padding:8px 10px 7px;
   border-radius:18px;
-  background:linear-gradient(180deg, rgba(79,198,255,.22), rgba(79,198,255,.10));
-  border:1px solid rgba(255,255,255,.20);
-  box-shadow:0 8px 18px rgba(0,0,0,.08);
+  background:linear-gradient(180deg, rgba(14,24,38,.96), rgba(24,38,58,.96));
+  border:1px solid rgba(255,255,255,.14);
+  box-shadow:0 10px 24px rgba(0,0,0,.18);
 }
 .day-dow,.day-mon{
   font-family:'IBM Plex Mono', ui-monospace, monospace;
   font-size:10px;
   font-weight:800;
   letter-spacing:.18em;
-  color:rgba(19,50,74,.68);
+  color:rgba(255,255,255,.70);
 }
 .day-day{
   font-size:18px;
   line-height:1;
   font-weight:800;
   letter-spacing:-.05em;
-  color:#0f1722;
+  color:#ffffff;
 }
 .plan-card h3{
   margin:0;

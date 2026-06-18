@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="City waterfront at dusk">
+  <defs>
+    <linearGradient id="citySky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#2a2f45"/>
+      <stop offset="55%" stop-color="#52607b"/>
+      <stop offset="100%" stop-color="#ecd1a3"/>
+    </linearGradient>
+    <linearGradient id="cityWater" x1="0" x2="1">
+      <stop offset="0%" stop-color="#33465d"/>
+      <stop offset="100%" stop-color="#1a2838"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#citySky)"/>
+  <circle cx="930" cy="176" r="68" fill="#ffdca0" opacity=".92"/>
+  <path d="M0 526h1200v374H0Z" fill="url(#cityWater)"/>
+  <path d="M0 560c96-20 184-28 274-12 108 19 190 62 314 48s199-72 309-69 204 55 303 55v318H0Z" fill="#7ca0ba" opacity=".13"/>
+  <rect x="120" y="366" width="120" height="270" rx="14" fill="#f2e6cd"/>
+  <rect x="250" y="310" width="98" height="326" rx="14" fill="#d9c7a0"/>
+  <rect x="360" y="250" width="140" height="386" rx="14" fill="#f7ead2"/>
+  <rect x="516" y="292" width="92" height="344" rx="14" fill="#c6ae83"/>
+  <rect x="626" y="220" width="164" height="416" rx="14" fill="#eee0bf"/>
+  <rect x="807" y="286" width="116" height="350" rx="14" fill="#d8c19a"/>
+  <rect x="938" y="342" width="118" height="294" rx="14" fill="#f1e2c0"/>
+  <path d="M90 640h1020" stroke="#f5d79d" stroke-width="8" opacity=".65"/>
+  <path d="M0 744c126-30 224-33 336 0s205 42 314 18 201-54 313-51 162 25 237 38v156H0Z" fill="#162231"/>
+</svg>

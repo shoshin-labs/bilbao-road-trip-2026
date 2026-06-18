@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Ferry leaving Jersey at dawn">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0f2438"/>
+      <stop offset="55%" stop-color="#27445e"/>
+      <stop offset="100%" stop-color="#9ec0d3"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#678ca3"/>
+      <stop offset="100%" stop-color="#23415a"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffe7b4"/>
+      <stop offset="100%" stop-color="#f0b36a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#sky)"/>
+  <circle cx="930" cy="170" r="74" fill="url(#sun)" opacity=".95"/>
+  <path d="M0 500H1200V900H0Z" fill="url(#sea)"/>
+  <path d="M0 558c68-14 128-30 200-12s124 35 204 18 146-42 232-26 126 40 212 34 133-34 188-32 109 17 166 16v344H0Z" fill="#1a3247" opacity=".42"/>
+  <path d="M430 485h340l-34 78H386Z" fill="#e9eef2"/>
+  <path d="M492 378h210l42 78H450Z" fill="#f6f7f7"/>
+  <path d="M538 330h116v58H538Z" fill="#dfe8ee"/>
+  <path d="M515 313h162l30 23H485Z" fill="#b5c4cf"/>
+  <rect x="566" y="350" width="46" height="60" rx="7" fill="#7ea3ba"/>
+  <rect x="620" y="350" width="46" height="60" rx="7" fill="#7ea3ba"/>
+  <rect x="674" y="350" width="46" height="60" rx="7" fill="#7ea3ba"/>
+  <rect x="560" y="429" width="52" height="54" rx="6" fill="#cfdbe3"/>
+  <rect x="620" y="429" width="52" height="54" rx="6" fill="#cfdbe3"/>
+  <rect x="680" y="429" width="52" height="54" rx="6" fill="#cfdbe3"/>
+  <path d="M212 500c100 0 160-34 262-34s151 34 250 34 149-31 244-31 164 31 232 31" fill="none" stroke="#e9f4fb" stroke-width="9" opacity=".8"/>
+  <path d="M250 610c120-38 208-40 332-6s202 42 305 10 180-35 267-10" fill="none" stroke="#f7c982" stroke-width="7" opacity=".65"/>
+  <path d="M0 844h1200V900H0Z" fill="#122433"/>
+</svg>

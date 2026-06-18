@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Road through France toward Bilbao">
+  <defs>
+    <linearGradient id="roadSky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#cddae6"/>
+      <stop offset="100%" stop-color="#f6ead4"/>
+    </linearGradient>
+    <linearGradient id="roadGround" x1="0" x2="1">
+      <stop offset="0%" stop-color="#3d5b48"/>
+      <stop offset="55%" stop-color="#8ea56f"/>
+      <stop offset="100%" stop-color="#d7b36d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#roadSky)"/>
+  <path d="M0 390C120 330 224 324 360 351s204 72 312 44 186-84 276-92 164 17 252 66v531H0Z" fill="url(#roadGround)"/>
+  <path d="M0 504c94-20 163-27 248-12 86 15 135 48 216 48s145-35 232-44 166 10 251 6 160-31 253-20v418H0Z" fill="#5d7d56" opacity=".45"/>
+  <path d="M510 900L630 362c8-32 29-50 59-50s51 18 59 50l120 538h-358Z" fill="#edf0eb"/>
+  <path d="M567 900l80-362c6-24 19-37 38-37s32 13 38 37l80 362H567Z" fill="#39424f"/>
+  <path d="M608 900l39-301 35 301h-74Z" fill="#f2ede5"/>
+  <path d="M148 474c58-34 129-30 188 0" stroke="#f5e7cf" stroke-width="16" stroke-linecap="round" fill="none" opacity=".8"/>
+  <path d="M898 410c62 2 118 19 172 54" stroke="#f5e7cf" stroke-width="16" stroke-linecap="round" fill="none" opacity=".8"/>
+  <rect x="860" y="240" width="160" height="86" rx="20" fill="#f1dfb6" opacity=".95"/>
+  <rect x="1050" y="286" width="90" height="56" rx="16" fill="#e8d1a2" opacity=".8"/>
+  <path d="M0 840h1200v60H0Z" fill="#253042"/>
+</svg>

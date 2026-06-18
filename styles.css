@@ -692,27 +692,35 @@ img{max-width:100%;display:block}
 .card-extras{
   display:grid;
   gap:12px;
-  grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns:1fr;
   margin-top:6px;
 }
 .extra-block{
   border:1px solid rgba(255,255,255,.10);
   background:rgba(255,255,255,.03);
   border-radius:18px;
-  padding:14px 14px 13px;
+  padding:14px;
+  display:grid;
+  grid-template-columns:118px minmax(0, 1fr);
+  gap:12px;
+  align-items:start;
 }
 .extra-label{
-  margin:0 0 8px;
+  margin:0;
   font-family:'IBM Plex Mono', ui-monospace, monospace;
   text-transform:uppercase;
   letter-spacing:.16em;
   font-size:10px;
+  line-height:1.35;
   color:rgba(255,255,255,.62);
 }
 .extra-copy{
   margin:0;
-  color:rgba(247,243,234,.86);
+  color:rgba(247,243,234,.90);
   line-height:1.55;
+}
+@media (max-width: 520px){
+  .extra-block{grid-template-columns:1fr}
 }
 
 @media (max-width: 900px){

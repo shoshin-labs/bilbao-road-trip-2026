@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jersey → Bilbao Road Trip 2026</title>
-  <meta name="description" content="Tom and Sam's Jersey → Bilbao road trip, with Bilbao at the centre, two city breaks on the way down, and the confirmed stays laid out clearly." />
+  <meta name="description" content="Tom and Sam's Jersey → Bilbao road trip, laid out as a proper vertical timeline with Bilbao at the centre, two city breaks framing it, and clickable travel CTAs." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -21,46 +21,19 @@
       <div class="hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Bilbao trip brief</p>
-          <h1>Bilbao, framed by two city breaks.</h1>
-          <p class="lede">The shape of the trip is simple: cross from Jersey, pause in La Rochelle, settle into Bilbao for the main stay, then close with Bordeaux before heading home. Bilbao is the reason for the drive; the stops around it make the whole thing feel easy.</p>
+          <h1>The route, day by day.</h1>
+          <p class="lede">A proper vertical timeline makes the content easier to read: each stop sits on the rail, the dates stay visible, and Bilbao gets the strongest treatment because it is the centre of the trip, not just one more stop.</p>
 
           <div class="hero-actions">
-            <a class="button primary" href="#route">View the route</a>
+            <a class="button primary" href="#timeline">View the timeline</a>
             <a class="button" href="#bases">Open the stays</a>
+            <a class="button" href="#bilbao-week">Jump to Bilbao week</a>
           </div>
 
           <div class="fact-row" aria-label="Trip facts">
             <div><span>Trip window</span><strong>Fri 4 Sep → Sun 13 Sep 2026</strong></div>
             <div><span>Outbound ferry</span><strong>Jersey → St Malo · 09:40</strong></div>
             <div><span>Main stay</span><strong>Bilbao · 5–12 Sep</strong></div>
-          </div>
-
-          <div class="route-strip" id="route" aria-label="Route stops">
-            <article class="route-stage">
-              <span>1</span>
-              <strong>Jersey</strong>
-              <p>Ferry out</p>
-            </article>
-            <article class="route-stage">
-              <span>2</span>
-              <strong>La Rochelle</strong>
-              <p>First city break</p>
-            </article>
-            <article class="route-stage route-stage-focus">
-              <span>3</span>
-              <strong>Bilbao</strong>
-              <p>Main stay</p>
-            </article>
-            <article class="route-stage">
-              <span>4</span>
-              <strong>Bordeaux</strong>
-              <p>Final night</p>
-            </article>
-            <article class="route-stage">
-              <span>5</span>
-              <strong>Jersey</strong>
-              <p>Home again</p>
-            </article>
           </div>
         </div>
 
@@ -84,81 +57,190 @@
     </header>
 
     <main>
-      <section class="section" id="travel">
-        <div class="section-head section-head-wide">
-          <p class="eyebrow">Route</p>
-          <h2>The shape of the trip</h2>
-          <p>Keep the movement clean and the pauses worth it: one harbour night, the main run into Bilbao, then a final city stop before the ferry home. The route should feel deliberate, not overworked.</p>
+      <section class="timeline-shell section" id="timeline" aria-label="Vertical travel timeline">
+        <div class="timeline-head">
+          <div class="guide">Stops</div>
+          <div class="rail-label">The rail</div>
+          <div class="guide">Notes</div>
         </div>
 
-        <div class="drive-grid">
-          <article class="drive-card drive-card-large">
-            <div class="drive-topline">
-              <span>Fri 4 Sep</span>
-              <span>Jersey → La Rochelle</span>
+        <div class="entries">
+          <article class="entry right reveal">
+            <div class="card-wrap">
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-topline">
+                    <div class="card-chip">Fri 4 Sep</div>
+                    <div class="date-pill">Jersey → La Rochelle</div>
+                  </div>
+                  <h2>Across the water, then down to the first city break.</h2>
+                  <p class="summary">This is the tidy opening day: early ferry, one long drive, and a harbour night that keeps the first part of the trip calm.</p>
+                  <div class="facts">
+                    <div class="fact"><span>Leave Jersey</span><strong>08:45</strong></div>
+                    <div class="fact"><span>Ferry departure</span><strong>09:40</strong></div>
+                    <div class="fact"><span>Drive after disembarkation</span><strong>~4.5–5.5 hrs</strong></div>
+                    <div class="fact"><span>Target check-in</span><strong>18:00</strong></div>
+                  </div>
+                  <ul class="bullets">
+                    <li>Use the crossing as the reset point; the trip starts once the ferry leaves.</li>
+                    <li>Keep dinner easy and local — no need to turn the first night into a project.</li>
+                  </ul>
+                  <div class="action-row">
+                    <a class="button light" href="https://www.google.com/maps/search/?api=1&query=Novotel+La+Rochelle+Centre" target="_blank" rel="noreferrer">Open La Rochelle map</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h3>Across the water, then down to the first city break.</h3>
-            <div class="schedule-grid">
-              <div><span>Leave Jersey</span><strong>08:45</strong></div>
-              <div><span>Ferry departure</span><strong>09:40</strong></div>
-              <div><span>Drive after disembarkation</span><strong>~4.5–5.5 hrs</strong></div>
-              <div><span>Target check-in</span><strong>18:00</strong></div>
-            </div>
-            <p>Get across early, keep the first day tidy, and arrive with enough daylight for a harbour walk and an easy dinner.</p>
+            <div class="timeline-node"><div class="node-date">4 Sep</div><div class="node-dot alt-5"></div></div>
           </article>
 
-          <article class="drive-card">
-            <div class="drive-topline">
-              <span>Sat 5 Sep</span>
-              <span>La Rochelle → Bilbao</span>
+          <article class="entry left reveal">
+            <div class="card-wrap">
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-topline">
+                    <div class="card-chip">Sat 5 Sep</div>
+                    <div class="date-pill">La Rochelle → Bilbao</div>
+                  </div>
+                  <h2>The big southbound stretch.</h2>
+                  <p class="summary">This is the real transfer day: leave early, stop once for lunch, and arrive in Bilbao with enough room left in the day to unpack and breathe.</p>
+                  <div class="facts">
+                    <div class="fact"><span>Depart</span><strong>07:30</strong></div>
+                    <div class="fact"><span>Lunch stop</span><strong>12:30–13:30</strong></div>
+                    <div class="fact"><span>Target arrival</span><strong>17:30–18:30</strong></div>
+                    <div class="fact"><span>Main stay</span><strong>Bilbao begins here</strong></div>
+                  </div>
+                  <div class="card-emphasis">
+                    <div class="callout">
+                      <span class="note-label">What matters</span>
+                      <strong>Land in Bilbao feeling settled, not rushed.</strong>
+                      <p>The point is not to spend the whole day on the road; it is to arrive with enough energy for the city to feel like the centre of the trip.</p>
+                    </div>
+                    <div class="mini">
+                      <span class="note-label">Practical</span>
+                      <strong>One transfer, one dinner, early night.</strong>
+                      <p>That gives the week in Bilbao a clean start.</p>
+                    </div>
+                  </div>
+                  <div class="action-row">
+                    <a class="button light" href="#bilbao-week">See the Bilbao week</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h3>The big southbound stretch.</h3>
-            <div class="schedule-grid compact">
-              <div><span>Depart</span><strong>07:30</strong></div>
-              <div><span>Lunch stop</span><strong>12:30–13:30</strong></div>
-              <div><span>Target arrival</span><strong>17:30–18:30</strong></div>
-            </div>
-            <p>Leave early, treat the drive as a clean transfer, and land in Bilbao with enough time to unpack and reset properly.</p>
+            <div class="timeline-node"><div class="node-date">5 Sep</div><div class="node-dot alt-1"></div></div>
           </article>
 
-          <article class="drive-card">
-            <div class="drive-topline">
-              <span>Sat 12 Sep</span>
-              <span>Bilbao → Bordeaux</span>
+          <article class="entry center reveal" id="bilbao-week">
+            <div class="timeline-node"><div class="node-date">6–11 Sep</div><div class="node-dot alt-3"></div></div>
+            <div class="card-wrap">
+              <div class="card center-card">
+                <div class="card-inner">
+                  <div class="center-hero">
+                    <div>
+                      <div class="card-chip">Bilbao week</div>
+                      <h2>Bilbao is the centre of gravity.</h2>
+                    </div>
+                    <div class="center-badge">Main stay · 5 nights plus</div>
+                  </div>
+                  <p class="summary" style="max-width:68ch;margin-bottom:16px;">This is the part that should breathe. The route does its job by framing Bilbao: a museum day, a coast day, a flex day, and the rest left open for wandering, eating, and hanging out in the city.</p>
+                  <div class="center-columns">
+                    <div class="center-box">
+                      <h3>Home in Altzaga</h3>
+                      <p>Host: Shira<br>Address: José Luis Goioaga Etorbidea, 22, Altzaga, País Vasco 48950<br>Check-in: Sat 5 Sep · 16:00</p>
+                    </div>
+                    <div class="center-box">
+                      <h3>Access and parking</h3>
+                      <p>5th floor, left door<br>Free street parking<br>Metro Erandio nearby</p>
+                    </div>
+                    <div class="center-box">
+                      <h3>What the week needs to include</h3>
+                      <p>One Guggenheim / riverfront day, one coast day to Getxo or Portugalete, and one flexible day that can turn into food, rest, or an inland run.</p>
+                    </div>
+                    <div class="center-box">
+                      <h3>How it should feel</h3>
+                      <p>Not a stopover. A real base. The kind of stay that gives the whole trip a centre of gravity.</p>
+                    </div>
+                  </div>
+                  <div class="stack-note">
+                    <div class="line"><span>Parking</span><strong>Free street parking</strong></div>
+                    <div class="line"><span>Transit</span><strong>Metro Erandio nearby</strong></div>
+                    <div class="line"><span>Arrival mood</span><strong>Unpack, reset, then let the city take over</strong></div>
+                  </div>
+                  <div class="action-row">
+                    <a class="button light" href="https://www.google.com/maps/search/?api=1&query=Jose+Luis+Goioaga+Etorbidea+22+Altzaga" target="_blank" rel="noreferrer">Open Bilbao map</a>
+                    <a class="button light" href="#bases">Open stay details</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h3>A shorter final hop.</h3>
-            <div class="schedule-grid compact">
-              <div><span>Depart</span><strong>08:30</strong></div>
-              <div><span>Arrival</span><strong>13:30–14:30</strong></div>
-              <div><span>Check-in</span><strong>15:00</strong></div>
-            </div>
-            <p>Roll out after breakfast, park once, and let Bordeaux take care of the evening.</p>
           </article>
 
-          <article class="drive-card">
-            <div class="drive-topline">
-              <span>Sun 13 Sep</span>
-              <span>Bordeaux → Jersey</span>
+          <article class="entry right reveal">
+            <div class="card-wrap">
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-topline">
+                    <div class="card-chip">Sat 12 Sep</div>
+                    <div class="date-pill">Bilbao → Bordeaux</div>
+                  </div>
+                  <h2>A shorter final hop.</h2>
+                  <p class="summary">After a full week in Bilbao, Bordeaux acts like the final exhale: a clean drive, a central hotel, and one more city night before the ferry home.</p>
+                  <div class="facts">
+                    <div class="fact"><span>Depart</span><strong>08:30</strong></div>
+                    <div class="fact"><span>Arrival</span><strong>13:30–14:30</strong></div>
+                    <div class="fact"><span>Check-in</span><strong>15:00</strong></div>
+                    <div class="fact"><span>Stay</span><strong>Novotel Bordeaux Centre Ville</strong></div>
+                  </div>
+                  <ul class="bullets">
+                    <li>Keep the final drive efficient — breakfast, pack once, go.</li>
+                    <li>Bordeaux is for the evening; don’t overload the afternoon.</li>
+                  </ul>
+                  <div class="action-row">
+                    <a class="button light" href="https://www.google.com/maps/search/?api=1&query=Novotel+Bordeaux+Centre+Ville" target="_blank" rel="noreferrer">Open Bordeaux map</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h3>Home day with a sensible buffer.</h3>
-            <div class="schedule-grid compact">
-              <div><span>Depart</span><strong>09:00</strong></div>
-              <div><span>St Malo buffer</span><strong>Arrive early</strong></div>
-              <div><span>Ferry home</span><strong>18:00</strong></div>
-            </div>
-            <p>Keep the morning unhurried, protect the ferry margin, and finish the loop without squeezing the last day.</p>
+            <div class="timeline-node"><div class="node-date">12 Sep</div><div class="node-dot alt-2"></div></div>
           </article>
 
-          <aside class="drive-note">
-            <p class="panel-label">Bilbao week</p>
-            <h3>Bilbao is the centre of gravity; the rest is framing.</h3>
-            <p>That middle week should breathe. One museum day, one coast day, one flex day, and the rest left open for wandering, eating, and hanging out in the city.</p>
-            <div class="mini-schedule">
-              <div><span>One museum day</span><strong>Guggenheim + riverfront</strong></div>
-              <div><span>One coast day</span><strong>Getxo / Portugalete</strong></div>
-              <div><span>One flex day</span><strong>Food, rest, or an inland run</strong></div>
+          <article class="entry left reveal">
+            <div class="card-wrap">
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-topline">
+                    <div class="card-chip">Sun 13 Sep</div>
+                    <div class="date-pill">Bordeaux → Jersey</div>
+                  </div>
+                  <h2>Home day with a sensible buffer.</h2>
+                  <p class="summary">The closing day should feel unhurried. Depart in time to keep the ferry margin safe, arrive with daylight in hand, and finish the loop without squeezing the last hour.</p>
+                  <div class="facts">
+                    <div class="fact"><span>Depart</span><strong>09:00</strong></div>
+                    <div class="fact"><span>St Malo buffer</span><strong>Arrive early</strong></div>
+                    <div class="fact"><span>Ferry home</span><strong>18:00</strong></div>
+                    <div class="fact"><span>Loop ends</span><strong>Back in Jersey</strong></div>
+                  </div>
+                  <div class="card-emphasis">
+                    <div class="callout">
+                      <span class="note-label">Goal</span>
+                      <strong>Finish the trip neatly.</strong>
+                      <p>All the buffer is there so the journey home does not become another challenge.</p>
+                    </div>
+                    <div class="mini">
+                      <span class="note-label">Mood</span>
+                      <strong>Calm ferry, not frantic ferry.</strong>
+                      <p>That is the whole point of the last day.</p>
+                    </div>
+                  </div>
+                  <div class="action-row">
+                    <a class="button light" href="#top">Back to top</a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </aside>
+            <div class="timeline-node"><div class="node-date">13 Sep</div><div class="node-dot alt-4"></div></div>
+          </article>
         </div>
       </section>
 
@@ -259,6 +341,7 @@
               </div>
               <div class="action-row">
                 <a class="button light" href="https://www.google.com/maps/search/?api=1&query=Jose+Luis+Goioaga+Etorbidea+22+Altzaga" target="_blank" rel="noreferrer">Open map</a>
+                <a class="button light" href="#bilbao-week">Jump to Bilbao week</a>
               </div>
             </div>
           </details>

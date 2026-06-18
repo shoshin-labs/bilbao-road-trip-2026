@@ -43,9 +43,7 @@ if (grid) {
   `).join('');
 }
 
-const revealTargets = document.querySelectorAll('.route-stage, .drive-card, .drive-note, .photo-card, .base-card');
-revealTargets.forEach((el) => el.classList.add('reveal'));
-
+const revealTargets = document.querySelectorAll('.reveal');
 const io = new IntersectionObserver((entries) => {
   for (const entry of entries) {
     if (entry.isIntersecting) {
@@ -53,12 +51,10 @@ const io = new IntersectionObserver((entries) => {
       io.unobserve(entry.target);
     }
   }
-}, { threshold: 0.18 });
+}, { threshold: 0.16 });
 
 revealTargets.forEach((el) => io.observe(el));
 
 window.addEventListener('load', () => {
-  requestAnimationFrame(() => {
-    revealTargets.forEach((el) => el.classList.add('is-visible'));
-  });
+  requestAnimationFrame(() => revealTargets.forEach((el) => el.classList.add('is-visible')));
 });

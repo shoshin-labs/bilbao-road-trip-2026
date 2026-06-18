@@ -11,9 +11,9 @@ const dayCards = [
   {
     city: 'La Rochelle',
     day: 'Fri 4 Sep',
-    title: 'Arrive, check in, keep it easy.',
-    summary: 'The only job is to get off the ferry, make the drive, and settle beside the harbour without overdoing the first night.',
-    bullets: ['Ferry from Jersey at 09:40', 'Easy dinner near the old port', 'Sleep early'],
+    title: 'Arrive, stretch your legs, keep the first night light.',
+    summary: 'This is not the day to overplan: ferry, drive, check in, then a harbour walk, a drink, or a seafood dinner if everyone still has energy.',
+    bullets: ['Old port walk or tower lookout', 'Market / aquarium / rain backup', 'Simple dinner near the harbour'],
     cta: 'Open La Rochelle map',
     href: 'https://www.google.com/maps/search/?api=1&query=Novotel+La+Rochelle+Centre',
     key: 'ferry'
@@ -21,9 +21,9 @@ const dayCards = [
   {
     city: 'Île de Ré',
     day: 'Sat 5 Sep',
-    title: 'Bike the island properly.',
-    summary: 'Use the extra night to do the island at a gentle pace: villages, beach, oysters, and a long lunch are the point.',
-    bullets: ['Start after breakfast', 'Ride Saint-Martin-de-Ré or La Flotte', 'Finish with a beach stop or oyster lunch'],
+    title: 'Make the island a proper day out.',
+    summary: 'The whole point of the extra night is to let Île de Ré breathe: bike between villages, stop for a long lunch, and leave room for beach time or oysters.',
+    bullets: ['Village loop: Saint-Martin-de-Ré, La Flotte, or Ars-en-Ré', 'Beach stop when the pace starts to drag', 'Oyster hut or long lunch before heading back'],
     cta: 'Open Île de Ré map',
     href: 'https://www.google.com/maps/search/?api=1&query=%C3%8Ele+de+R%C3%A9',
     key: 'island'
@@ -31,9 +31,9 @@ const dayCards = [
   {
     city: 'Bilbao',
     day: 'Sun 6 Sep',
-    title: 'Drive south and make Bilbao the base.',
-    summary: 'Take the long transfer day, arrive with enough daylight to unpack, then finish with pintxos in Casco Viejo.',
-    bullets: ['Leave La Rochelle early', 'One lunch stop on the road', 'Casco Viejo for the first evening'],
+    title: 'Drive south, unpack, and choose a first evening.',
+    summary: 'The transfer is the job; the rest is easy: arrive with daylight left, settle into Altzaga, then decide whether the first evening is a stroll, pintxos, or something quieter.',
+    bullets: ['Leave La Rochelle early', 'One proper lunch stop on the road', 'Choose between Casco Viejo, a river walk, or an early night'],
     cta: 'Open Bilbao map',
     href: 'https://www.google.com/maps/search/?api=1&query=Jose+Luis+Goioaga+Etorbidea+22+Altzaga',
     key: 'road'
@@ -41,9 +41,9 @@ const dayCards = [
   {
     city: 'Bilbao',
     day: 'Mon 7 Sep',
-    title: 'Do the Guggenheim day.',
-    summary: 'This is the obvious first Bilbao move: the museum, the river, and one good lunch or coffee stop nearby.',
-    bullets: ['Guggenheim in the morning', 'Riverfront walk after', 'Dinner somewhere simple but good'],
+    title: 'Give the museum and river the morning.',
+    summary: 'A Bilbao day does not need a rigid script. Start with the Guggenheim, then let the river path, lunch, or a coffee stop decide the rest of the afternoon.',
+    bullets: ['Guggenheim in the morning', 'Riverfront walk or Abandoibarra after', 'One lunch stop, one easy evening'],
     cta: 'Open Guggenheim map',
     href: 'https://www.google.com/maps/search/?api=1&query=Guggenheim+Museum+Bilbao',
     key: 'city',
@@ -52,9 +52,9 @@ const dayCards = [
   {
     city: 'Bilbao',
     day: 'Tue 8 Sep',
-    title: 'Take the coast day.',
-    summary: 'Get out to the sea for a change of pace — Getxo, Plentzia, Sopelana, or even Gaztelugatxe if you want the longer version.',
-    bullets: ['Pick one beach base', 'Keep lunch by the water', 'Return for a relaxed evening'],
+    title: 'Use the coast for a change of pace.',
+    summary: 'This day can be as simple as a seaside lunch and a walk, or as full as a proper beach run to Getxo, Plentzia, Sopelana, or Gaztelugatxe.',
+    bullets: ['Pick one beach base or coastal town', 'Keep lunch by the water', 'Return to Bilbao for a relaxed evening'],
     cta: 'Open beach ideas',
     href: 'https://www.google.com/maps/search/?api=1&query=Bilbao+beach+day+Getxo+Plentzia+Sopelana',
     key: 'road',
@@ -63,9 +63,9 @@ const dayCards = [
   {
     city: 'Bilbao',
     day: 'Wed 9 Sep',
-    title: 'Use the old town for food.',
-    summary: 'This is the day for wandering bars, eating slowly, and letting Casco Viejo do the work rather than chasing a strict itinerary.',
-    bullets: ['Long pintxos lunch', 'Casual wandering in the old town', 'Book one nice dinner if you want it'],
+    title: 'Let Casco Viejo do the heavy lifting.',
+    summary: 'Wander, snack, sit down, stand back up, repeat. The old town is perfect for food drifting, a market stop, and a low-pressure evening that can stretch or shrink as needed.',
+    bullets: ['Long pintxos lunch or roaming bar hop', 'Casual wandering through the old town', 'Book a dinner only if you still want one'],
     cta: 'Open Casco Viejo',
     href: 'https://www.google.com/maps/search/?api=1&query=Casco+Viejo+Bilbao+pintxos',
     key: 'ferry',
@@ -74,9 +74,9 @@ const dayCards = [
   {
     city: 'Bilbao',
     day: 'Thu 10 Sep',
-    title: 'Keep one flex day open.',
-    summary: 'This is the buffer day: market, lookout, funicular, or just a slower morning followed by a late lunch.',
-    bullets: ['Sleep in if needed', 'Pick one small outing', 'Leave room for a better dinner'],
+    title: 'Keep one day loose on purpose.',
+    summary: 'This is the built-in buffer: sleep in, do one small outing, or use the day for a funicular, lookout, market, or even just a second coffee and a long lunch.',
+    bullets: ['Sleep in if needed', 'Choose one small outing or viewpoint', 'Leave room for a better dinner or a second plan'],
     cta: 'Open funicular ideas',
     href: 'https://www.google.com/maps/search/?api=1&query=Bilbao+funicular',
     key: 'city',
@@ -85,9 +85,9 @@ const dayCards = [
   {
     city: 'Bilbao',
     day: 'Fri 11 Sep',
-    title: 'Use the last Bilbao day well.',
-    summary: 'Repeat the best bits: a river walk, one last lunch, and any place you missed earlier in the week.',
-    bullets: ['Revisit your favourite spot', 'Leave the afternoon loose', 'Finish with a proper dinner'],
+    title: 'Repeat the best bits, then leave space.',
+    summary: 'The final Bilbao day is for the favourites: one last walk, one last lunch, one last look at anything you skipped, and then a good dinner without packing the afternoon solid.',
+    bullets: ['Revisit your favourite spot', 'Leave the afternoon open for a bonus excursion', 'Finish with a proper dinner if it feels right'],
     cta: 'Open riverfront walk',
     href: 'https://www.google.com/maps/search/?api=1&query=Bilbao+riverfront+walk',
     key: 'road',
@@ -96,9 +96,9 @@ const dayCards = [
   {
     city: 'Bordeaux',
     day: 'Sat 12 Sep',
-    title: 'Drive to Bordeaux and keep it light.',
-    summary: 'A shorter hop now: leave Bilbao in the morning, check in, and save the city for the evening.',
-    bullets: ['Breakfast and pack once', 'Arrive in the afternoon', 'Simple evening on foot'],
+    title: 'Use Bordeaux as a gentle final stop.',
+    summary: 'By now the trip should be in cruise mode: drive in, park once, and keep the rest of the day to a river walk, a market stop, or one last meal in the centre.',
+    bullets: ['Breakfast and pack once', 'Arrive in the afternoon', 'Choose a riverfront walk, market browse, or easy evening'],
     cta: 'Open Bordeaux map',
     href: 'https://www.google.com/maps/search/?api=1&query=Novotel+Bordeaux+Centre+Ville',
     key: 'city'
@@ -113,6 +113,36 @@ const dayCards = [
     href: '#top',
     key: 'ferry'
   }
+];
+
+const stopCards = [
+  {
+    city: 'La Rochelle',
+    day: 'Arrival base',
+    title: 'Use it for harbour time, not errands.',
+    summary: 'This stop only needs to do a few things well: give you an easy first night, a good walk around the old port, and a calm reset before the island day.',
+    bullets: ['Old Port promenade and towers', 'Aquarium or market if the weather turns', 'Seafood lunch or apéro before bed'],
+    cta: 'Open La Rochelle map',
+    href: 'https://www.google.com/maps/search/?api=1&query=La+Rochelle+Old+Port'
+  },
+  {
+    city: 'Île de Ré',
+    day: 'Island day',
+    title: 'Pick two or three things and leave the rest loose.',
+    summary: 'The island works best when it feels unrushed: ride between villages, stop for a swim or a beach walk, and treat lunch as part of the outing rather than a break from it.',
+    bullets: ['Village loop: Saint-Martin-de-Ré, La Flotte, or Ars-en-Ré', 'Beach stop or salt-marsh detour', 'Oyster hut / long lunch / coffee by the water'],
+    cta: 'Open Île de Ré map',
+    href: 'https://www.google.com/maps/search/?api=1&query=%C3%8Ele+de+R%C3%A9'
+  },
+  {
+    city: 'Bordeaux',
+    day: 'Final stop',
+    title: 'Keep the last city walkable and simple.',
+    summary: 'Bordeaux does not need a big plan. It can be the river quays, a wine bar, a market browse, or a slow dinner that turns the final night into something pleasant rather than logistical.',
+    bullets: ['Riverfront walk and Pont de Pierre', 'Chartrons or a wine bar if you still have energy', 'Quick market / bakery stop before the ferry day'],
+    cta: 'Open Bordeaux map',
+    href: 'https://www.google.com/maps/search/?api=1&query=Bordeaux+quays'
+  },
 ];
 
 const photoCards = [
@@ -153,8 +183,8 @@ const photoCards = [
   },
   {
     image: '../assets/restaurant.svg',
-    title: 'Nice restaurant night',
-    text: 'Book one good dinner in Bilbao — pintxos, tasting menu, or a long relaxed sit-down meal.',
+    title: 'Nice dinner + walk',
+    text: 'Book one good dinner in Bilbao and pair it with a river walk or a slow drink so the evening feels like a proper outing.',
     cta: 'Find restaurants',
     href: 'https://www.google.com/maps/search/?api=1&query=restaurants+Bilbao'
   },
@@ -184,6 +214,26 @@ if (grid) {
         <div class="action-row">
           <a class="button light" href="${card.href}" target="_blank" rel="noreferrer">${card.cta}</a>
         </div>
+      </div>
+    </article>
+  `).join('');
+}
+
+const stopGrid = document.getElementById('stopGrid');
+if (stopGrid) {
+  stopGrid.innerHTML = stopCards.map((card) => `
+    <article class="plan-card reveal">
+      <div class="plan-topline">
+        <span class="day">${card.day}</span>
+        <span class="city">${card.city}</span>
+      </div>
+      <h3>${card.title}</h3>
+      <p>${card.summary}</p>
+      <ul class="plan-list">
+        ${card.bullets.map((item) => `<li>${item}</li>`).join('')}
+      </ul>
+      <div class="action-row">
+        <a class="button light" href="${card.href}" target="_blank" rel="noreferrer">${card.cta}</a>
       </div>
     </article>
   `).join('');

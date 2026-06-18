@@ -441,14 +441,37 @@ img{max-width:100%;display:block}
 .card-chip{
   display:inline-flex;
   align-items:center;
-  padding:7px 11px;
-  border-radius:999px;
+  justify-content:center;
+  padding:7px 10px;
+  min-width:72px;
+  border-radius:18px;
   background:linear-gradient(180deg, rgba(79,198,255,.18), rgba(79,198,255,.08));
   border:1px solid rgba(255,255,255,.18);
   color:#13324a;
   font-weight:800;
-  letter-spacing:.08em;
   box-shadow:0 6px 16px rgba(79,198,255,.12);
+}
+.date-stack{
+  display:grid;
+  grid-template-rows:auto auto auto;
+  place-items:center;
+  gap:2px;
+  line-height:1;
+  text-transform:uppercase;
+}
+.date-dow,.date-mon{
+  font-family:'IBM Plex Mono',ui-monospace,monospace;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.18em;
+  color:rgba(19,50,74,.68);
+}
+.date-day{
+  font-size:18px;
+  line-height:1;
+  font-weight:800;
+  letter-spacing:-.05em;
+  color:#0f1722;
 }
 .date-pill{
   padding:8px 12px;
@@ -465,6 +488,16 @@ img{max-width:100%;display:block}
   order:-1;
   margin-right:auto;
 }
+.node-date .date-stack{
+  padding:8px 10px 7px;
+  border-radius:18px;
+  background:rgba(14,22,33,.72);
+  border:1px solid rgba(255,255,255,.24);
+  box-shadow:0 8px 18px rgba(0,0,0,.18);
+  min-width:92px;
+}
+.node-date .date-dow,.node-date .date-mon{color:rgba(255,255,255,.68)}
+.node-date .date-day{color:#fff}
 .card h2,.center-hero h2{
   margin:0;
   font-size:clamp(24px,3vw,34px);

@@ -1,0 +1,46 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1C3550"/>
+      <stop offset="60%" stop-color="#4F7294"/>
+      <stop offset="100%" stop-color="#F0C79B"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#255C7A"/>
+      <stop offset="100%" stop-color="#1A3448"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EED8B2"/>
+      <stop offset="100%" stop-color="#D0A36E"/>
+    </linearGradient>
+    <linearGradient id="house" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FAF5EC"/>
+      <stop offset="100%" stop-color="#D9D1C4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <circle cx="915" cy="150" r="72" fill="#F3D7A2" opacity="0.9"/>
+  <circle cx="915" cy="150" r="112" fill="#F3D7A2" opacity="0.12"/>
+  <path d="M0 510C120 470 214 486 318 518C430 552 535 560 654 532C767 505 859 460 976 462C1067 463 1136 484 1200 508V800H0V510Z" fill="url(#sea)"/>
+  <path d="M0 578C126 548 226 560 336 592C434 620 544 628 650 606C759 583 852 532 968 532C1064 532 1134 546 1200 566V800H0V578Z" fill="#183042" opacity="0.6"/>
+  <path d="M165 610C238 568 345 533 473 521C558 513 611 548 679 562C744 576 819 564 889 540C921 529 956 527 992 532C940 578 896 612 838 645C773 682 712 702 626 708C503 718 391 709 288 682C231 666 193 646 165 610Z" fill="url(#sand)"/>
+  <path d="M430 563C479 539 533 522 596 523C676 524 748 553 811 590C780 627 748 651 704 672C651 697 598 709 537 706C472 703 420 689 372 665C382 631 399 596 430 563Z" fill="#E5C086" opacity="0.95"/>
+  <path d="M520 598C566 572 611 566 655 574C679 578 700 586 721 598C694 631 660 657 622 670C588 662 555 644 520 598Z" fill="#B78D5E" opacity="0.88"/>
+  <path d="M400 585C434 579 463 582 495 595" stroke="#FBF4E7" stroke-width="4" stroke-linecap="round" opacity="0.45"/>
+  <path d="M250 629C336 610 391 612 473 634" stroke="#FBF4E7" stroke-width="4" stroke-linecap="round" opacity="0.3"/>
+  <g transform="translate(690 405)">
+    <rect x="0" y="76" width="138" height="104" rx="14" fill="url(#house)"/>
+    <path d="M-12 82L69 20L150 82" fill="#D04B3F"/>
+    <rect x="24" y="108" width="26" height="30" rx="4" fill="#A5C7D8"/>
+    <rect x="64" y="108" width="26" height="30" rx="4" fill="#A5C7D8"/>
+    <rect x="104" y="108" width="16" height="44" rx="4" fill="#A77052"/>
+  </g>
+  <g transform="translate(520 430)">
+    <rect x="0" y="98" width="112" height="82" rx="12" fill="url(#house)"/>
+    <path d="M-12 104L56 54L124 104" fill="#4E7F97"/>
+    <rect x="18" y="126" width="22" height="24" rx="4" fill="#B9D0DC"/>
+    <rect x="50" y="126" width="22" height="24" rx="4" fill="#B9D0DC"/>
+    <rect x="82" y="126" width="12" height="32" rx="4" fill="#A77052"/>
+  </g>
+  <path d="M84 184C164 151 252 139 352 146C423 151 497 173 576 174C641 175 691 161 748 139C818 112 882 96 966 98C1034 100 1108 119 1174 156" stroke="#F4E6CF" stroke-width="12" stroke-linecap="round" opacity="0.35"/>
+</svg>

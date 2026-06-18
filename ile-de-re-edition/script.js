@@ -14,8 +14,8 @@ const dayCards = [
     title: 'Land, stretch your legs, keep dinner simple.',
     summary: 'Ferry, drive, check in. After that, one harbour walk and an easy dinner is enough.',
     bullets: ['Walk the Vieux-Port at dusk', 'Aquarium de La Rochelle if it rains', 'Seafood near the harbour or Marché Central'],
-    cta: 'Open La Rochelle map',
-    href: 'https://www.google.com/maps/search/?api=1&query=Novotel+La+Rochelle+Centre',
+    cta: 'Open St Malo → La Rochelle route',
+    href: 'https://www.google.com/maps/dir/?api=1&origin=Gare+Maritime+du+Naye+Saint-Malo&destination=Novotel+La+Rochelle+Centre&travelmode=driving',
     key: 'ferry'
   },
   {

@@ -9,11 +9,11 @@ const assets = {
 
 const photoCards = [
   {
-    image: assets.island,
+    image: 'assets/island.svg',
     title: 'Île de Ré day',
-    text: 'Bike the island, stop in Saint-Martin-de-Ré or La Flotte, and leave room for oysters or a beach lunch.',
-    cta: 'Open Île de Ré map',
-    href: 'https://www.google.com/maps/search/?api=1&query=%C3%8Ele+de+R%C3%A9'
+    text: 'Cross the bridge from La Rochelle, then bike village to village and choose between the Phare des Baleines, a beach, or a long oyster lunch.',
+    cta: 'Open Île de Ré bridge route',
+    href: 'https://www.google.com/maps/dir/?api=1&origin=La+Rochelle&destination=Rivedoux-Plage&travelmode=driving'
   },
   {
     image: 'assets/guggenheim.svg',

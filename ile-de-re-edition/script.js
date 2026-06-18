@@ -21,11 +21,11 @@ const dayCards = [
   {
     city: 'Île de Ré',
     day: 'Sat 5 Sep',
-    title: 'Use the island properly.',
-    summary: 'Bike, lunch, beach. Let Île de Ré take the pace instead of forcing one.',
-    bullets: ['Pick one village loop: Saint-Martin, La Flotte, or Ars-en-Ré', 'Stop for a beach break when the ride needs it', 'Finish with oysters or a long lunch'],
-    cta: 'Open Île de Ré map',
-    href: 'https://www.google.com/maps/search/?api=1&query=%C3%8Ele+de+R%C3%A9',
+    title: 'Cross the bridge, then use the island properly.',
+    summary: 'Take the Pont de l’Île de Ré from La Rochelle, then bike, lunch, and beach.',
+    bullets: ['Cross early via the bridge and avoid making it a project', 'Pick one village loop: Saint-Martin, La Flotte, or Ars-en-Ré', 'Finish with oysters or a long lunch'],
+    cta: 'Open Île de Ré bridge route',
+    href: 'https://www.google.com/maps/dir/?api=1&origin=La+Rochelle&destination=Rivedoux-Plage&travelmode=driving',
     key: 'island'
   },
   {
@@ -34,8 +34,8 @@ const dayCards = [
     title: 'Drive south, unpack, pick an easy first evening.',
     summary: 'The drive is the task. Bilbao can stay light until you land.',
     bullets: ['Leave La Rochelle early', 'Lunch on the drive south', 'Choose pintxos, a river walk, or an early night'],
-    cta: 'Open Bilbao map',
-    href: 'https://www.google.com/maps/search/?api=1&query=Jose+Luis+Goioaga+Etorbidea+22+Altzaga',
+    cta: 'Open La Rochelle → Bilbao route',
+    href: 'https://www.google.com/maps/dir/?api=1&origin=Novotel+La+Rochelle+Centre&destination=Jose+Luis+Goioaga+Etorbidea+22+Altzaga&travelmode=driving',
     key: 'road'
   },
   {
@@ -96,11 +96,11 @@ const dayCards = [
   {
     city: 'Bordeaux',
     day: 'Sat 12 Sep',
-    title: 'Use Bordeaux as a soft landing.',
-    summary: 'Drive in, park once, and keep the rest of the day on foot.',
-    bullets: ['Breakfast and pack once', 'Arrive in the afternoon', 'Choose a river walk, market browse, or easy evening'],
-    cta: 'Open Bordeaux map',
-    href: 'https://www.google.com/maps/search/?api=1&query=Novotel+Bordeaux+Centre+Ville',
+    title: 'Drive into Bordeaux, then keep the day light.',
+    summary: 'This is the shorter hop after Bilbao: one clean drive, park once, and let Bordeaux stay walkable.',
+    bullets: ['Leave Bilbao after breakfast', 'Arrive in Bordeaux in the afternoon', 'Choose a river walk, market browse, or easy evening'],
+    cta: 'Open Bilbao → Bordeaux route',
+    href: 'https://www.google.com/maps/dir/?api=1&origin=Jose+Luis+Goioaga+Etorbidea+22+Altzaga&destination=Novotel+Bordeaux+Centre+Ville&travelmode=driving',
     key: 'city'
   },
   {

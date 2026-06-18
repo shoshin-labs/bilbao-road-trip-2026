@@ -153,7 +153,7 @@ img{max-width:100%;display:block}
   color:rgba(250,246,239,.68);
 }
 .hero-copy{padding:4px 2px 2px;position:relative;z-index:1}
-.eyebrow,.panel-label,.base-city,.field-label,.route-stage span,.route-stage p,.drive-topline span,.fact-row span,.summary-meta span,.photo-card .label,.kicker,.meta,.node-date,.card-chip,.note-label,.rail-label,.timeline-head .guide,.base-summary{
+.eyebrow,.panel-label,.base-city,.field-label,.route-stage span,.route-stage p,.drive-topline span,.fact-row span,.summary-meta span,.photo-card .label,.kicker,.meta,.node-date,.card-chip,.note-label,.rail-label,.timeline-head .guide{
   font-family:'IBM Plex Mono', ui-monospace, monospace;
   text-transform:uppercase;
   letter-spacing:.14em;
@@ -738,16 +738,34 @@ img{max-width:100%;display:block}
 .base-card summary{
   list-style:none;
   cursor:pointer;
-  padding:20px 22px;
-  display:flex;
-  justify-content:space-between;
-  gap:24px;
-  align-items:flex-start;
+  padding:22px 22px 20px;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:18px 24px;
+  align-items:start;
 }
+.base-card summary::marker{content:''}
 .base-card summary::-webkit-details-marker{display:none}
-.base-card h3{margin:4px 0 0;font-size:28px;line-height:1.02;letter-spacing:-.04em}
-.base-summary{margin:10px 0 0;font-size:10px;color:rgba(247,243,234,.58)}
-.summary-meta{display:grid;gap:8px;justify-items:end;text-align:right;min-width:180px}
+.base-card h3{margin:4px 0 0;font-size:24px;line-height:1.08;letter-spacing:-.04em}
+.base-summary{
+  margin:10px 0 0;
+  max-width:42ch;
+  font-family:inherit;
+  text-transform:none;
+  letter-spacing:0;
+  font-size:16px;
+  line-height:1.55;
+  color:rgba(247,243,234,.76);
+}
+.summary-meta{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  gap:8px;
+  text-align:right;
+  min-width:0;
+}
+.summary-meta span{color:rgba(255,255,255,.62);font-size:11px}
 .summary-meta strong{font-size:13px;line-height:1.4}
 .base-body{
   border-top:1px solid rgba(255,255,255,.08);
@@ -793,8 +811,8 @@ img{max-width:100%;display:block}
   .card,.center-card{width:100%}
   .card::before{display:none}
   .facts,.card-emphasis,.center-columns,.base-grid{grid-template-columns:1fr}
-  .summary-meta{text-align:left;justify-items:start;min-width:0}
-  .base-card summary{flex-direction:column}
+  .summary-meta{align-items:flex-start;text-align:left;min-width:0}
+  .base-card summary{grid-template-columns:1fr}
   .base-card h3{font-size:24px}
 }
 @media (max-width: 640px){

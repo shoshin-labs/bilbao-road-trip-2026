@@ -1,3 +1,5 @@
+document.documentElement.classList.add('js');
+
 const assets = {
   ferry: 'assets/ferry.svg',
   road: 'assets/road.svg',
@@ -12,13 +14,13 @@ const cardData = [
   },
   {
     key: 'road',
-    title: 'The long drive south',
-    text: 'The middle of the trip is built around one proper road day and a clean arrival in Bilbao.'
+    title: 'The road south',
+    text: 'The middle of the trip is built around one proper drive day and a clean arrival in Bilbao.'
   },
   {
     key: 'city',
     title: 'City finish',
-    text: 'Bilbao and Bordeaux give the trip its final shape: city nights after the driving days.'
+    text: 'Bilbao and Bordeaux give the trip its final shape: city nights after the road.'
   }
 ];
 
@@ -30,7 +32,7 @@ for (const img of document.querySelectorAll('[data-photo]')) {
 const grid = document.getElementById('photoGrid');
 if (grid) {
   grid.innerHTML = cardData.map((card) => `
-    <article class="photo-card">
+    <article class="photo-card reveal">
       <div class="art"><img src="${assets[card.key]}" alt="${card.title}" loading="lazy"></div>
       <div class="caption">
         <h3>${card.title}</h3>
@@ -39,3 +41,23 @@ if (grid) {
     </article>
   `).join('');
 }
+
+const revealTargets = document.querySelectorAll('.route-stage, .drive-card, .drive-note, .photo-card, .base-card');
+revealTargets.forEach((el) => el.classList.add('reveal'));
+
+const io = new IntersectionObserver((entries) => {
+  for (const entry of entries) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible');
+      io.unobserve(entry.target);
+    }
+  }
+}, { threshold: 0.16 });
+
+revealTargets.forEach((el) => io.observe(el));
+
+window.addEventListener('load', () => {
+  requestAnimationFrame(() => {
+    revealTargets.forEach((el) => el.classList.add('is-visible'));
+  });
+});

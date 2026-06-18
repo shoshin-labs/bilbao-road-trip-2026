@@ -11,9 +11,9 @@ const dayCards = [
   {
     city: 'La Rochelle',
     day: 'Fri 4 Sep',
-    title: 'Arrive, stretch your legs, keep the first night light.',
-    summary: 'This is not the day to overplan: ferry, drive, check in, then a harbour walk, the Aquarium, or a seafood dinner if everyone still has energy.',
-    bullets: ['Walk the Vieux-Port and harbour towers', 'Aquarium de La Rochelle if you want an indoor stop', 'Simple dinner near the harbour or Marché Central area'],
+    title: 'Land, stretch your legs, keep dinner simple.',
+    summary: 'Ferry, drive, check in. After that, one harbour walk and an easy dinner is enough.',
+    bullets: ['Walk the Vieux-Port at dusk', 'Aquarium de La Rochelle if it rains', 'Seafood near the harbour or Marché Central'],
     cta: 'Open La Rochelle map',
     href: 'https://www.google.com/maps/search/?api=1&query=Novotel+La+Rochelle+Centre',
     key: 'ferry'
@@ -21,9 +21,9 @@ const dayCards = [
   {
     city: 'Île de Ré',
     day: 'Sat 5 Sep',
-    title: 'Make the island a proper day out.',
-    summary: 'The whole point of the extra night is to let Île de Ré breathe: bike between villages, stop for a long lunch, and leave room for beach time or oysters.',
-    bullets: ['Village loop: Saint-Martin-de-Ré, La Flotte, or Ars-en-Ré', 'Beach stop when the pace starts to drag', 'Oyster hut or long lunch before heading back'],
+    title: 'Use the island properly.',
+    summary: 'Bike, lunch, beach. Let Île de Ré take the pace instead of forcing one.',
+    bullets: ['Pick one village loop: Saint-Martin, La Flotte, or Ars-en-Ré', 'Stop for a beach break when the ride needs it', 'Finish with oysters or a long lunch'],
     cta: 'Open Île de Ré map',
     href: 'https://www.google.com/maps/search/?api=1&query=%C3%8Ele+de+R%C3%A9',
     key: 'island'
@@ -31,9 +31,9 @@ const dayCards = [
   {
     city: 'Bilbao',
     day: 'Sun 6 Sep',
-    title: 'Drive south, unpack, and choose a first evening.',
-    summary: 'The transfer is the job; the rest is easy: arrive with daylight left, settle into Altzaga, then decide whether the first evening is Casco Viejo pintxos, a river walk, or something quieter.',
-    bullets: ['Leave La Rochelle early', 'Lunch somewhere on the drive south', 'Choose between Casco Viejo, Abandoibarra, or an early night'],
+    title: 'Drive south, unpack, pick an easy first evening.',
+    summary: 'The drive is the task. Bilbao can stay light until you land.',
+    bullets: ['Leave La Rochelle early', 'Lunch on the drive south', 'Choose pintxos, a river walk, or an early night'],
     cta: 'Open Bilbao map',
     href: 'https://www.google.com/maps/search/?api=1&query=Jose+Luis+Goioaga+Etorbidea+22+Altzaga',
     key: 'road'
@@ -41,9 +41,9 @@ const dayCards = [
   {
     city: 'Bilbao',
     day: 'Mon 7 Sep',
-    title: 'Give the museum and river the morning.',
-    summary: 'Start with the Guggenheim, then let Abandoibarra, the river path, or a lunch stop decide the rest of the afternoon.',
-    bullets: ['Guggenheim in the morning', 'Abandoibarra or the riverfront after', 'Coffee, lunch, or an early dinner in the centre'],
+    title: 'Give the Guggenheim the morning.',
+    summary: 'Start there, then let the river or lunch decide the rest.',
+    bullets: ['Guggenheim in the morning', 'Riverfront or Abandoibarra after', 'Coffee, lunch, or an early dinner in the centre'],
     cta: 'Open Guggenheim map',
     href: 'https://www.google.com/maps/search/?api=1&query=Guggenheim+Museum+Bilbao',
     key: 'city',
@@ -53,8 +53,8 @@ const dayCards = [
     city: 'Bilbao',
     day: 'Tue 8 Sep',
     title: 'Use the coast for a change of pace.',
-    summary: 'This day can be as simple as a seaside lunch and a walk, or as full as a proper beach run to Getxo, Ereaga, Plentzia, or Sopelana.',
-    bullets: ['Pick one beach base or coastal town', 'Lunch by the water in Getxo, Ereaga, or Plentzia', 'Return to Bilbao for a relaxed evening'],
+    summary: 'Keep it easy: one coastal stop, one lunch, one walk, then back to Bilbao.',
+    bullets: ['Pick Getxo, Ereaga, Plentzia, or Sopelana', 'Lunch by the water', 'Return to Bilbao for a relaxed evening'],
     cta: 'Open beach ideas',
     href: 'https://www.google.com/maps/search/?api=1&query=Bilbao+beach+day+Getxo+Plentzia+Sopelana',
     key: 'road',
@@ -63,9 +63,9 @@ const dayCards = [
   {
     city: 'Bilbao',
     day: 'Wed 9 Sep',
-    title: 'Let Casco Viejo do the heavy lifting.',
-    summary: 'Wander, snack, sit down, stand back up, repeat. The old town works for pintxos, Mercado de la Ribera, and an evening that can stretch or shrink as needed.',
-    bullets: ['Long pintxos lunch or Mercado de la Ribera', 'Casual wandering through Casco Viejo', 'Book a dinner only if you still want one'],
+    title: 'Let Casco Viejo do the work.',
+    summary: 'Pintxos, the market, a slow wander. That is enough for the day.',
+    bullets: ['Long pintxos lunch or Mercado de la Ribera', 'Wander Casco Viejo without a route', 'Book dinner only if you still want it'],
     cta: 'Open Casco Viejo',
     href: 'https://www.google.com/maps/search/?api=1&query=Casco+Viejo+Bilbao+pintxos',
     key: 'ferry',
@@ -75,8 +75,8 @@ const dayCards = [
     city: 'Bilbao',
     day: 'Thu 10 Sep',
     title: 'Keep one day loose on purpose.',
-    summary: 'This is the built-in buffer: sleep in, do one small outing, or use the day for the Funicular de Artxanda, Azkuna Zentroa, Mercado de la Ribera, or a second coffee and a long lunch.',
-    bullets: ['Sleep in if needed', 'Choose one small outing or viewpoint', 'Leave room for a better dinner or a second plan'],
+    summary: 'This is the buffer. Sleep in, do one outing, or leave it wide open.',
+    bullets: ['Sleep in if needed', 'Choose one small outing or viewpoint', 'Leave room for dinner or a second plan'],
     cta: 'Open funicular ideas',
     href: 'https://www.google.com/maps/search/?api=1&query=Bilbao+funicular',
     key: 'city',
@@ -86,8 +86,8 @@ const dayCards = [
     city: 'Bilbao',
     day: 'Fri 11 Sep',
     title: 'Repeat the best bits, then leave space.',
-    summary: 'The final Bilbao day is for the favourites: one last river walk, one last lunch, one last look at anything you skipped, and then a good dinner without packing the afternoon solid.',
-    bullets: ['Revisit your favourite spot', 'Leave the afternoon open for a bonus excursion', 'Finish with a proper dinner if it feels right'],
+    summary: 'One last river walk, one last lunch, and no pressure to squeeze more in.',
+    bullets: ['Revisit your favourite spot', 'Leave the afternoon open', 'Finish with a proper dinner if it feels right'],
     cta: 'Open riverfront walk',
     href: 'https://www.google.com/maps/search/?api=1&query=Bilbao+riverfront+walk',
     key: 'road',
@@ -96,9 +96,9 @@ const dayCards = [
   {
     city: 'Bordeaux',
     day: 'Sat 12 Sep',
-    title: 'Use Bordeaux as a gentle final stop.',
-    summary: 'By now the trip should be in cruise mode: drive in, park once, and keep the rest of the day to Place de la Bourse, the Miroir d’Eau, a river walk, or one last meal in the centre.',
-    bullets: ['Breakfast and pack once', 'Arrive in the afternoon', 'Choose a riverfront walk, market browse, or easy evening'],
+    title: 'Use Bordeaux as a soft landing.',
+    summary: 'Drive in, park once, and keep the rest of the day on foot.',
+    bullets: ['Breakfast and pack once', 'Arrive in the afternoon', 'Choose a river walk, market browse, or easy evening'],
     cta: 'Open Bordeaux map',
     href: 'https://www.google.com/maps/search/?api=1&query=Novotel+Bordeaux+Centre+Ville',
     key: 'city'
@@ -107,7 +107,7 @@ const dayCards = [
     city: 'Home',
     day: 'Sun 13 Sep',
     title: 'Get back to Jersey with margin.',
-    summary: 'Keep the final day calm so the ferry feels like the end of the trip, not another task.',
+    summary: 'Keep the final day calm so the ferry feels like the end, not another job.',
     bullets: ['Leave Bordeaux early', 'Arrive in St Malo with a buffer', 'Ferry home at 18:00'],
     cta: 'Back to top',
     href: '#top',
@@ -120,7 +120,7 @@ const stopCards = [
     city: 'La Rochelle',
     day: 'Arrival base',
     title: 'Use it for harbour time, not errands.',
-    summary: 'This stop only needs to do a few things well: give you an easy first night, a walk around the Vieux-Port, and a calm reset before the island day.',
+    summary: 'It only needs to give you an easy first night and a calm reset.',
     bullets: ['Walk the Vieux-Port and harbour towers', 'Aquarium de La Rochelle if you want an indoor stop', 'Dinner near Marché Central or the old port'],
     cta: 'Open La Rochelle map',
     href: 'https://www.google.com/maps/search/?api=1&query=Vieux-Port,+La+Rochelle'
@@ -129,7 +129,7 @@ const stopCards = [
     city: 'Île de Ré',
     day: 'Island day',
     title: 'Pick two or three things and leave the rest loose.',
-    summary: 'The island works best when it feels unrushed: ride between Saint-Martin-de-Ré, La Flotte, or Ars-en-Ré, then stop for a swim, a market browse, or a long oyster lunch.',
+    summary: 'The island works best when it feels unrushed: ride, swim, eat, repeat.',
     bullets: ['Village loop: Saint-Martin-de-Ré, La Flotte, or Ars-en-Ré', 'Beach stop at Plage des Gollandières or Conche des Baleines', 'Oyster hut, market, or long lunch by the water'],
     cta: 'Open Île de Ré map',
     href: 'https://www.google.com/maps/search/?api=1&query=%C3%8Ele+de+R%C3%A9'
@@ -138,7 +138,7 @@ const stopCards = [
     city: 'Bordeaux',
     day: 'Final stop',
     title: 'Keep the last city walkable and simple.',
-    summary: 'Bordeaux does not need a big plan. Keep to the quays, Place de la Bourse, the Miroir d’Eau, or a market / wine-bar evening and let the last night stay easy.',
+    summary: 'Bordeaux does not need a big plan. Stay on the quays and keep the night easy.',
     bullets: ['Riverfront walk and Pont de Pierre', 'Place de la Bourse + Miroir d’Eau', 'Chartrons, Cité du Vin, or Marché des Capucins if you have time'],
     cta: 'Open Bordeaux map',
     href: 'https://www.google.com/maps/search/?api=1&query=Bordeaux+quays'
@@ -149,49 +149,49 @@ const photoCards = [
   {
     image: '../assets/island.svg',
     title: 'Île de Ré day',
-    text: 'Bike from village to village, then choose between the Phare des Baleines, Plage des Gollandières, or a long oyster lunch.',
+    text: 'Bike village to village, then choose between the Phare des Baleines, a beach, or a long oyster lunch.',
     cta: 'Open Île de Ré map',
     href: 'https://www.google.com/maps/search/?api=1&query=%C3%8Ele+de+R%C3%A9'
   },
   {
     image: '../assets/guggenheim.svg',
     title: 'Guggenheim day',
-    text: 'Start with the museum, then stay on the Abandoibarra riverfront for coffee, a lunch stop, or a slow wander.',
+    text: 'Start with the museum, then stay on the Abandoibarra riverfront for coffee, lunch, or a slow wander.',
     cta: 'Open Guggenheim map',
     href: 'https://www.google.com/maps/search/?api=1&query=Guggenheim+Museum+Bilbao'
   },
   {
     image: '../assets/city.svg',
     title: 'Gallery loop',
-    text: 'Use Museo de Bellas Artes, Azkuna Zentroa, and Rekalde for a slower art day between the Guggenheim and the river.',
+    text: 'Museo de Bellas Artes, Azkuna Zentroa, and Rekalde give Bilbao a slower art day.',
     cta: 'Find Bilbao galleries',
     href: 'https://www.google.com/maps/search/?api=1&query=Museo+de+Bellas+Artes+de+Bilbao+Azkuna+Zentroa+Rekalde'
   },
   {
     image: '../assets/beach.svg',
     title: 'Coast day',
-    text: 'Use Getxo, Ereaga beach, Plentzia, or Sopelana for an easy seaside day and a lunch that becomes part of the outing.',
+    text: 'Getxo, Ereaga, Plentzia, or Sopelana all work for an easy seaside lunch and walk.',
     cta: 'Open beach ideas',
     href: 'https://www.google.com/maps/search/?api=1&query=Bilbao+beach+day+Getxo+Plentzia+Sopelana'
   },
   {
     image: '../assets/pintxos.svg',
     title: 'Old town pintxos',
-    text: 'Use Casco Viejo and Mercado de la Ribera for a roaming lunch, a few bar stops, and an evening that can stretch if it needs to.',
+    text: 'Casco Viejo and Mercado de la Ribera work for a roaming lunch, a few bar stops, and an evening that can stretch.',
     cta: 'Open Casco Viejo',
     href: 'https://www.google.com/maps/search/?api=1&query=Casco+Viejo+Bilbao+pintxos'
   },
   {
     image: '../assets/riverwalk.svg',
     title: 'Riverfront walk',
-    text: 'The river path links the city together — Abandoibarra, the Guggenheim, and the centre all connect cleanly on foot.',
+    text: 'The river path links the city together: Abandoibarra, the Guggenheim, and the centre all connect on foot.',
     cta: 'Open riverfront walk',
     href: 'https://www.google.com/maps/search/?api=1&query=Bilbao+riverfront+walk'
   },
   {
     image: '../assets/restaurant.svg',
     title: 'Nice dinner + walk',
-    text: 'Book one proper dinner in Bilbao and pair it with a walk by the river or a slow drink near the centre so it feels like a full evening.',
+    text: 'Book one proper dinner in Bilbao and pair it with a river walk or a slow drink near the centre.',
     cta: 'Find restaurants',
     href: 'https://www.google.com/maps/search/?api=1&query=restaurants+Bilbao'
   },

@@ -622,8 +622,8 @@ img{max-width:100%;display:block}
 
 .base-list{
   display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:16px;
+  grid-template-columns:1fr;
+  gap:18px;
 }
 .base-card{
   border-radius:28px;
@@ -635,14 +635,15 @@ img{max-width:100%;display:block}
 .base-card-head{
   padding:22px 22px 18px;
   display:grid;
-  grid-template-columns:minmax(0,1fr) auto;
+  grid-template-columns:minmax(0,1fr) minmax(180px,260px);
   gap:18px 20px;
   align-items:start;
 }
 .base-card h3{margin:4px 0 0;font-size:24px;line-height:1.08;letter-spacing:-.04em}
 .base-summary{
   margin:10px 0 0;
-  max-width:38ch;
+  max-width:none;
+  width:100%;
   font-family:inherit;
   text-transform:none;
   letter-spacing:0;

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Bilbao pintxos illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a2221"/>
+      <stop offset="100%" stop-color="#44312f"/>
+    </linearGradient>
+    <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7efe5"/>
+      <stop offset="100%" stop-color="#d9c8b1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <ellipse cx="592" cy="560" rx="390" ry="112" fill="#181110" opacity=".7"/>
+  <ellipse cx="592" cy="470" rx="360" ry="170" fill="url(#plate)"/>
+  <ellipse cx="592" cy="462" rx="300" ry="124" fill="#fffaf3"/>
+  <rect x="340" y="332" width="46" height="220" rx="20" fill="#c98d52" transform="rotate(-14 340 332)"/>
+  <rect x="432" y="306" width="46" height="246" rx="20" fill="#c54f41" transform="rotate(10 432 306)"/>
+  <rect x="520" y="328" width="46" height="228" rx="20" fill="#77a35b" transform="rotate(-8 520 328)"/>
+  <rect x="612" y="300" width="46" height="248" rx="20" fill="#d8a23b" transform="rotate(16 612 300)"/>
+  <rect x="700" y="334" width="46" height="216" rx="20" fill="#7d6cc8" transform="rotate(-12 700 334)"/>
+  <circle cx="353" cy="401" r="28" fill="#f1d0b4"/>
+  <circle cx="451" cy="385" r="28" fill="#f0d96b"/>
+  <circle cx="537" cy="404" r="28" fill="#a8d6c5"/>
+  <circle cx="636" cy="386" r="28" fill="#f6d88d"/>
+  <circle cx="728" cy="406" r="28" fill="#e8b7cb"/>
+  <rect x="818" y="286" width="64" height="172" rx="18" fill="#fff1db" opacity=".95"/>
+  <rect x="902" y="318" width="60" height="138" rx="18" fill="#e7f4ff" opacity=".95"/>
+  <path d="M850 280c0-54 21-92 55-92s55 38 55 92" fill="none" stroke="#efc26a" stroke-width="10" stroke-linecap="round"/>
+  <path d="M930 314c0-34 15-58 38-58s38 24 38 58" fill="none" stroke="#9bd0ef" stroke-width="10" stroke-linecap="round"/>
+  <text x="86" y="118" fill="#f0e0c6" font-family="IBM Plex Mono, monospace" font-size="26" letter-spacing=".22em">BILBAO / PINTXOS</text>
+</svg>

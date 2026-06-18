@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Bilbao riverfront walk illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f2230"/>
+      <stop offset="100%" stop-color="#18384e"/>
+    </linearGradient>
+    <linearGradient id="river" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#68b2d9"/>
+      <stop offset="100%" stop-color="#2f7aa6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <path d="M0 510c140-52 242-56 363-30 128 28 246 82 398 70 153-13 246-68 439-70v320H0Z" fill="url(#river)"/>
+  <path d="M170 548c82 18 139 47 187 92" fill="none" stroke="#eaf6ff" stroke-width="10" stroke-linecap="round" opacity=".6"/>
+  <path d="M354 512c88 22 169 62 252 120" fill="none" stroke="#eaf6ff" stroke-width="10" stroke-linecap="round" opacity=".5"/>
+  <path d="M650 492c71 19 131 46 185 82" fill="none" stroke="#eaf6ff" stroke-width="10" stroke-linecap="round" opacity=".45"/>
+  <rect x="226" y="186" width="32" height="188" rx="16" fill="#f7d28a"/>
+  <rect x="264" y="148" width="32" height="226" rx="16" fill="#efad71"/>
+  <rect x="302" y="202" width="32" height="172" rx="16" fill="#f0c97d"/>
+  <rect x="806" y="154" width="38" height="220" rx="19" fill="#ccd8e2"/>
+  <rect x="856" y="124" width="38" height="250" rx="19" fill="#e7edf3"/>
+  <rect x="906" y="176" width="38" height="198" rx="19" fill="#b7c8d7"/>
+  <path d="M132 438h936" stroke="#f4e3b8" stroke-width="10" opacity=".92"/>
+  <path d="M292 438l84-106h118l86 106" fill="none" stroke="#f4e3b8" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M658 438l70-84h96l68 84" fill="none" stroke="#f4e3b8" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="86" y="118" fill="#cfe8fb" font-family="IBM Plex Mono, monospace" font-size="26" letter-spacing=".22em">BILBAO / RIVER WALK</text>
+</svg>

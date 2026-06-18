@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Bilbao restaurant night illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2f1e20"/>
+      <stop offset="100%" stop-color="#5b3132"/>
+    </linearGradient>
+    <linearGradient id="lamp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe6a7"/>
+      <stop offset="100%" stop-color="#ffb86a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect x="140" y="538" width="920" height="36" rx="18" fill="#1a1112" opacity=".8"/>
+  <rect x="210" y="284" width="780" height="248" rx="32" fill="#f6efe4"/>
+  <rect x="245" y="322" width="710" height="38" rx="19" fill="#e9d2b2"/>
+  <circle cx="372" cy="438" r="78" fill="#e2b557"/>
+  <circle cx="372" cy="438" r="50" fill="#f8f3ea"/>
+  <circle cx="608" cy="438" r="78" fill="#c54d42"/>
+  <circle cx="608" cy="438" r="50" fill="#f8f3ea"/>
+  <circle cx="842" cy="438" r="78" fill="#8cb06f"/>
+  <circle cx="842" cy="438" r="50" fill="#f8f3ea"/>
+  <path d="M313 252h576" stroke="#ffe3aa" stroke-width="12" stroke-linecap="round"/>
+  <path d="M592 178v74" stroke="#ffe3aa" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="592" cy="132" r="36" fill="url(#lamp)"/>
+  <circle cx="592" cy="132" r="18" fill="#fff8de"/>
+  <rect x="452" y="604" width="300" height="54" rx="26" fill="#fff0d8"/>
+  <rect x="468" y="618" width="268" height="22" rx="11" fill="#d4ae7a"/>
+  <text x="86" y="118" fill="#ffd6a9" font-family="IBM Plex Mono, monospace" font-size="26" letter-spacing=".22em">BILBAO / DINNER NIGHT</text>
+</svg>

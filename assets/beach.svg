@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Bilbao beach day illustration">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#bfe9ff"/>
+      <stop offset="55%" stop-color="#dff4ff"/>
+      <stop offset="100%" stop-color="#fff2d5"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58a9cf"/>
+      <stop offset="100%" stop-color="#22668f"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4d7a6"/>
+      <stop offset="100%" stop-color="#ddba7e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <circle cx="980" cy="146" r="74" fill="#ffd46b"/>
+  <path d="M0 380C140 350 246 350 364 376c121 26 230 82 360 72 120-9 207-48 476-54v406H0Z" fill="url(#sea)"/>
+  <path d="M0 526c164-24 274-12 389 10 125 24 238 62 385 48 103-10 193-40 426-34v250H0Z" fill="url(#sand)"/>
+  <path d="M160 446c66-64 156-84 243-72 68 10 122 38 169 85" fill="none" stroke="#eaf8ff" stroke-width="8" stroke-linecap="round" opacity=".7"/>
+  <path d="M316 485c56-20 112-19 170 0" fill="none" stroke="#eaf8ff" stroke-width="8" stroke-linecap="round" opacity=".7"/>
+  <path d="M170 570c34-22 67-33 98-33 35 0 65 13 93 39" fill="none" stroke="#fff5df" stroke-width="10" stroke-linecap="round" opacity=".9"/>
+  <path d="M864 384l24-106h6l18 106" fill="#8c6a44"/>
+  <path d="M886 276c62 6 104 26 128 60-26 12-58 18-98 18-24 0-48-2-70-7 5-34 18-56 40-71z" fill="#f15c5a"/>
+  <path d="M820 324c40-6 76-2 110 13-20 20-47 33-82 40-29 6-57 6-83 1 6-20 20-41 55-54z" fill="#ffcc66" opacity=".95"/>
+  <text x="86" y="118" fill="#215b7f" font-family="IBM Plex Mono, monospace" font-size="26" letter-spacing=".22em">BILBAO / COAST DAY</text>
+</svg>

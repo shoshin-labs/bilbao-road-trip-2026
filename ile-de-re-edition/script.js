@@ -272,6 +272,13 @@ const renderExtras = (card) => {
   `;
 };
 
+const renderDayStack = (label) => {
+  const match = label.match(/^([A-Za-z]{3})\s+(\d{1,2})(?:\s+([A-Za-z]{3}))?$/);
+  if (!match) return `<span>${label}</span>`;
+  const [, dow, day, mon = ''] = match;
+  return `<span class="day-stack" aria-label="${label}"><span class="day-dow">${dow}</span><span class="day-day">${day}</span><span class="day-mon">${mon}</span></span>`;
+};
+
 for (const img of document.querySelectorAll('[data-photo]')) {
   const key = img.dataset.photo;
   if (assets[key]) img.src = assets[key];
@@ -320,8 +327,8 @@ if (dayGrid) {
   dayGrid.innerHTML = dayCards.map((card) => `
     <article class="plan-card reveal ${card.featured ? 'featured' : ''}">
       <div class="plan-topline">
-        <span class="day">${card.day}</span>
-        <span class="city">${card.city}</span>
+        <span class="plan-date">${renderDayStack(card.day)}</span>
+        <span class="plan-city">${card.city}</span>
       </div>
       <h3>${card.title}</h3>
       <p>${card.summary}</p>

@@ -653,6 +653,102 @@ img{max-width:100%;display:block}
 .photo-card h3{margin:8px 0 0;font-size:20px;letter-spacing:-.03em}
 .photo-card p{margin:10px 0 0;color:rgba(247,243,234,.72);line-height:1.55}
 
+.plan-card{
+  border-radius:26px;
+  padding:18px 18px 16px;
+  border:1px solid rgba(255,255,255,.08);
+  background:linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
+  box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+.plan-topline{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-bottom:12px;
+}
+.plan-date{
+  display:inline-flex;
+}
+.plan-city{
+  display:inline-flex;
+  align-items:center;
+  padding:6px 10px;
+  border-radius:999px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.08);
+  color:rgba(247,243,234,.76);
+  font-family:'IBM Plex Mono', ui-monospace, monospace;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  font-size:11px;
+  line-height:1.2;
+}
+.day-stack{
+  display:grid;
+  grid-template-rows:auto auto auto;
+  place-items:center;
+  gap:2px;
+  line-height:1;
+  text-transform:uppercase;
+  min-width:72px;
+  padding:8px 10px 7px;
+  border-radius:18px;
+  background:linear-gradient(180deg, rgba(79,198,255,.22), rgba(79,198,255,.10));
+  border:1px solid rgba(255,255,255,.20);
+  box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+.day-dow,.day-mon{
+  font-family:'IBM Plex Mono', ui-monospace, monospace;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.18em;
+  color:rgba(19,50,74,.68);
+}
+.day-day{
+  font-size:18px;
+  line-height:1;
+  font-weight:800;
+  letter-spacing:-.05em;
+  color:#0f1722;
+}
+.plan-card h3{
+  margin:0;
+  font-size:clamp(22px, 2.8vw, 30px);
+  line-height:1.05;
+  letter-spacing:-.04em;
+}
+.plan-card p{
+  margin:10px 0 0;
+  color:rgba(247,243,234,.76);
+  line-height:1.58;
+  font-size:16px;
+}
+.plan-list{
+  margin:14px 0 0;
+  padding:0;
+  list-style:none;
+  display:grid;
+  gap:10px;
+}
+.plan-list li{
+  position:relative;
+  padding-left:18px;
+  color:rgba(247,243,234,.84);
+  line-height:1.5;
+}
+.plan-list li::before{
+  content:'';
+  position:absolute;
+  left:0;
+  top:.6em;
+  width:8px;
+  height:8px;
+  border-radius:999px;
+  background:var(--accent);
+}
+
 .base-list{
   display:grid;
   grid-template-columns:1fr;

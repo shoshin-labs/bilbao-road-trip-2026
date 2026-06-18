@@ -34,16 +34,4 @@ function renderSimpleCards() {
 
 renderSimpleCards();
 
-document.querySelectorAll('[data-check]').forEach((input) => {
-  if (input.disabled) return;
-  const key = 'bilbao-trip-check-' + input.dataset.check;
-  input.checked = localStorage.getItem(key) === '1';
-  input.addEventListener('change', () => localStorage.setItem(key, input.checked ? '1' : '0'));
-});
 
-document.querySelectorAll('[data-copy]').forEach((btn) => btn.addEventListener('click', async () => {
-  await navigator.clipboard.writeText(btn.dataset.copy);
-  const old = btn.textContent;
-  btn.textContent = 'Copied';
-  setTimeout(() => (btn.textContent = old), 1200);
-}));

@@ -657,7 +657,7 @@ img{max-width:100%;display:block}
   .hero-media{grid-template-columns:1fr 1fr}
   .image-large{min-height:360px}
   .image-small{min-height:180px}
-  .photo-grid{grid-template-columns:1fr}
+  .photo-grid,.activity-suggest,.plan-grid{grid-template-columns:1fr}
 }
 @media (max-width: 960px){
   .timeline-shell::before,.timeline-shell::after,.entry::after{left:28px;transform:none}
@@ -690,6 +690,8 @@ img{max-width:100%;display:block}
   .card .summary,.section-head p,.photo-card p,.base-grid p,.callout p,.mini p{font-size:15px}
   .hero-media{grid-template-columns:1fr}
   .image-large,.image-small{min-height:220px;transform:none}
+  .hero-actions,.action-row{flex-direction:column;align-items:stretch}
+  .hero-actions .button,.action-row .button{width:100%;justify-content:center}
 }
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto}

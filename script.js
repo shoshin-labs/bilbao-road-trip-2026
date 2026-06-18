@@ -9,18 +9,18 @@ const assets = {
 const photoCards = [
   {
     key: 'ferry',
-    title: 'Leaving Jersey',
-    text: 'Dawn crossing mood: water first, then the roads that carry the trip south.'
+    title: 'Bilbao museum day',
+    text: 'Do the Guggenheim and riverfront, then keep the rest of the day open.'
   },
   {
     key: 'road',
-    title: 'The road south',
-    text: 'A long, clean drive day with Bilbao waiting at the end of it.'
+    title: 'Coast day',
+    text: 'Head to Getxo or Portugalete for sea air, walks, and an easy lunch.'
   },
   {
     key: 'city',
-    title: 'City finish',
-    text: 'Bilbao and Bordeaux give the trip its final shape: nights in city light after the road.'
+    title: 'Wandering day',
+    text: 'Use the flex day for food, markets, cafés, or an inland run if the weather is good.'
   }
 ];
 

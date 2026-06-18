@@ -689,8 +689,37 @@ img{max-width:100%;display:block}
 .plan-card.featured .action-row{
   margin-top:8px;
 }
+.card-extras{
+  display:grid;
+  gap:12px;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  margin-top:6px;
+}
+.extra-block{
+  border:1px solid rgba(255,255,255,.10);
+  background:rgba(255,255,255,.03);
+  border-radius:18px;
+  padding:14px 14px 13px;
+}
+.extra-label{
+  margin:0 0 8px;
+  font-family:'IBM Plex Mono', ui-monospace, monospace;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:10px;
+  color:rgba(255,255,255,.62);
+}
+.extra-copy{
+  margin:0;
+  color:rgba(247,243,234,.86);
+  line-height:1.55;
+}
 
-.base-list{display:grid;gap:14px}
+@media (max-width: 900px){
+  .card-extras{grid-template-columns:1fr;}
+}
+
+@media (max-width: 1200px){
 .base-card{
   border-radius:28px;
   border:1px solid rgba(255,255,255,.08);

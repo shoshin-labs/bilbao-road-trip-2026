@@ -197,6 +197,81 @@ const photoCards = [
   }
 ];
 
+
+const cardExtras = {
+  'La Rochelle|Fri 4 Sep': {
+    oneThing: 'Walk the Vieux-Port at dusk and call it a win.',
+    food: 'Seafood by the old port or a low-key dinner near Marché Central.',
+    rainy: 'Aquarium de La Rochelle, café time, or a covered market stop.'
+  },
+  'Île de Ré|Sat 5 Sep': {
+    oneThing: 'Bike between Saint-Martin-de-Ré and La Flotte, then stop for oysters.',
+    food: 'Oyster huts, beach cafés, or a long lunch in La Flotte or Saint-Martin.',
+    rainy: 'Market villages, salt marsh roads, and a slower coffee-and-lunch island loop.'
+  },
+  'Bilbao|Sun 6 Sep': {
+    oneThing: 'Do Casco Viejo for pintxos and nothing more.',
+    food: 'Pintxos in Casco Viejo or a calm dinner near the river if you want to keep it simple.',
+    rainy: 'A river café, an early dinner, or just head straight for bed and reset.'
+  },
+  'Bilbao|Mon 7 Sep': {
+    oneThing: 'Do the Guggenheim properly and linger by the river after.',
+    food: 'Lunch around Abandoibarra, then a coffee stop before you drift onward.',
+    rainy: 'The Guggenheim, museum cafés, and a sheltered riverfront wander still work well.'
+  },
+  'Bilbao|Tue 8 Sep': {
+    oneThing: 'Get to the coast and have a long lunch by the water.',
+    food: 'Fish lunch in Getxo or Ereaga, or a terrace lunch in Plentzia if the weather is good.',
+    rainy: 'Swap the beach for the promenade, Portugalete, or an indoor café-and-walk day.'
+  },
+  'Bilbao|Wed 9 Sep': {
+    oneThing: 'Do a proper pintxos drift through Casco Viejo and the market.',
+    food: 'Pintxos bars in Casco Viejo and a market lunch at Mercado de la Ribera.',
+    rainy: 'The covered market, churches, cafés, and bar-hopping still make sense in bad weather.'
+  },
+  'Bilbao|Thu 10 Sep': {
+    oneThing: 'Take the funicular up to Artxanda and look back over the city.',
+    food: 'A long lunch, a market nibble, or a hilltop drink if you go up to Artxanda.',
+    rainy: 'Azkuna Zentroa, Mercado de la Ribera, and a café crawl are your rainy-day safety net.'
+  },
+  'Bilbao|Fri 11 Sep': {
+    oneThing: 'Do one last slow walk by the river and keep the rest open.',
+    food: 'Book the dinner you actually want instead of squeezing in a random one.',
+    rainy: 'If the weather turns, repeat the Guggenheim / café combo or drift to a market lunch.'
+  },
+  'Bordeaux|Sat 12 Sep': {
+    oneThing: 'Walk Place de la Bourse and the Miroir d’Eau at sunset.',
+    food: 'Chartrons wine bars, a simple bistro, or a canelé stop if you want something classic.',
+    rainy: 'Cité du Vin, Marché des Capucins, and tram-linked café stops keep the day easy.'
+  },
+  'Home|Sun 13 Sep': {
+    oneThing: 'Keep the drive efficient so the ferry stays easy.',
+    food: 'Coffee, bakery stops, and one last roadside lunch if needed.',
+    rainy: 'Nothing fancy — just use the buffer and avoid pressure.'
+  },
+};
+
+const renderExtras = (card) => {
+  const extra = cardExtras[`${card.city}|${card.day}`];
+  if (!extra) return '';
+  return `
+    <div class="card-extras">
+      <div class="extra-block">
+        <p class="extra-label">If you only do one thing</p>
+        <p class="extra-copy">${extra.oneThing}</p>
+      </div>
+      <div class="extra-block">
+        <p class="extra-label">Good food</p>
+        <p class="extra-copy">${extra.food}</p>
+      </div>
+      <div class="extra-block">
+        <p class="extra-label">Rainy-day backup</p>
+        <p class="extra-copy">${extra.rainy}</p>
+      </div>
+    </div>
+  `;
+};
+
 for (const img of document.querySelectorAll('[data-photo]')) {
   const key = img.dataset.photo;
   if (assets[key]) img.src = assets[key];
@@ -232,6 +307,7 @@ if (stopGrid) {
       <ul class="plan-list">
         ${card.bullets.map((item) => `<li>${item}</li>`).join('')}
       </ul>
+      <div class="card-extras">${renderExtras(card)}</div>
       <div class="action-row">
         <a class="button light" href="${card.href}" target="_blank" rel="noreferrer">${card.cta}</a>
       </div>
@@ -252,6 +328,7 @@ if (dayGrid) {
       <ul class="plan-list">
         ${card.bullets.map((item) => `<li>${item}</li>`).join('')}
       </ul>
+      <div class="card-extras">${renderExtras(card)}</div>
       <div class="action-row">
         <a class="button light" href="${card.href}" ${card.href.startsWith('http') ? 'target="_blank" rel="noreferrer"' : ''}>${card.cta}</a>
       </div>

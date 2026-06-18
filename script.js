@@ -6,21 +6,21 @@ const assets = {
   city: 'assets/city.svg',
 };
 
-const cardData = [
+const photoCards = [
   {
     key: 'ferry',
     title: 'Leaving Jersey',
-    text: 'A dawn crossing mood: the route starts at sea, then turns into the long southbound drive.'
+    text: 'Dawn crossing mood: water first, then the roads that carry the trip south.'
   },
   {
     key: 'road',
     title: 'The road south',
-    text: 'The middle of the trip is built around one proper drive day and a clean arrival in Bilbao.'
+    text: 'A long, clean drive day with Bilbao waiting at the end of it.'
   },
   {
     key: 'city',
     title: 'City finish',
-    text: 'Bilbao and Bordeaux give the trip its final shape: city nights after the road.'
+    text: 'Bilbao and Bordeaux give the trip its final shape: nights in city light after the road.'
   }
 ];
 
@@ -31,10 +31,11 @@ for (const img of document.querySelectorAll('[data-photo]')) {
 
 const grid = document.getElementById('photoGrid');
 if (grid) {
-  grid.innerHTML = cardData.map((card) => `
+  grid.innerHTML = photoCards.map((card) => `
     <article class="photo-card reveal">
       <div class="art"><img src="${assets[card.key]}" alt="${card.title}" loading="lazy"></div>
       <div class="caption">
+        <p class="label">Travel mood</p>
         <h3>${card.title}</h3>
         <p>${card.text}</p>
       </div>
@@ -52,7 +53,7 @@ const io = new IntersectionObserver((entries) => {
       io.unobserve(entry.target);
     }
   }
-}, { threshold: 0.16 });
+}, { threshold: 0.18 });
 
 revealTargets.forEach((el) => io.observe(el));
 

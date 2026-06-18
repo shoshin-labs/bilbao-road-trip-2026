@@ -1,6 +1,6 @@
 # Bilbao Road Trip 2026
 
-A static trip HQ for Tom and Sam’s Jersey → Bilbao road trip, with the confirmed stays, practical timing, and a more visual article-style layout.
+A static trip HQ for Tom and Sam’s Jersey → Bilbao road trip, with Bilbao at the centre, two city breaks on the way down, and the confirmed stays laid out clearly.
 
 ## Run locally
 
@@ -10,8 +10,9 @@ python3 -m http.server 8080
 
 Then open http://localhost:8080
 
-## Notes
+## Files
 
-- Built as a static GitHub Pages site
-- Uses local SVG illustrations for the hero and mood cards
-- Keeps Bilbao as the centre of the trip, with La Rochelle and Bordeaux framing the drive
+- `index.html` — page content and structure
+- `styles.css` — dark Sanity-inspired visual system with warm travel accents
+- `script.js` — image wiring and reveal motion
+- `assets/` — local SVG travel illustrations

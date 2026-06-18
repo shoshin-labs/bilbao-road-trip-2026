@@ -33,9 +33,11 @@ const dayCards = [
     day: 'Sun 6 Sep',
     title: 'Drive south, unpack, pick an easy first evening.',
     summary: 'The drive is the task. Bilbao can stay light until you land.',
-    bullets: ['Leave La Rochelle early', 'Lunch on the drive south', 'Choose pintxos, a river walk, or an early night'],
+    bullets: ['Leave La Rochelle early', 'Lunch in Bayonne, then keep rolling south', 'Choose pintxos, a river walk, or an early night'],
     cta: 'Open La Rochelle → Bilbao route',
     href: 'https://www.google.com/maps/dir/?api=1&origin=Novotel+La+Rochelle+Centre&destination=Jose+Luis+Goioaga+Etorbidea+22+Altzaga&travelmode=driving',
+    secondaryCta: 'Open Bayonne lunch stop',
+    secondaryHref: 'https://www.google.com/maps/dir/?api=1&origin=Novotel+La+Rochelle+Centre&destination=Bayonne&travelmode=driving',
     key: 'road'
   },
   {
@@ -345,6 +347,7 @@ if (dayGrid) {
       <div class="card-extras">${renderExtras(card)}</div>
       <div class="action-row">
         <a class="button light" href="${card.href}" ${card.href.startsWith('http') ? 'target="_blank" rel="noreferrer"' : ''}>${card.cta}</a>
+        ${card.secondaryCta ? `<a class="button light" href="${card.secondaryHref}" target="_blank" rel="noreferrer">${card.secondaryCta}</a>` : ''}
       </div>
     </article>
   `).join('');

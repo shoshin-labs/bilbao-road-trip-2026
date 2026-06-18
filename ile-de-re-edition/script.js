@@ -107,10 +107,10 @@ const dayCards = [
     city: 'Home',
     day: 'Sun 13 Sep',
     title: 'Get back to Jersey with margin.',
-    summary: 'Keep the final day calm so the ferry feels like the end, not another job.',
-    bullets: ['Leave Bordeaux early', 'Arrive in St Malo with a buffer', 'Ferry home at 18:00'],
-    cta: 'Back to top',
-    href: '#top',
+    summary: 'Drive to St Malo with time in hand, then make the ferry the last easy step.',
+    bullets: ['Leave Bordeaux after breakfast', 'Drive to St Malo in about 4h45', 'Ferry home at 18:00'],
+    cta: 'Open St Malo route',
+    href: 'https://www.google.com/maps/dir/?api=1&origin=Novotel+Bordeaux+Centre+Ville&destination=Gare+Maritime+du+Naye+Saint-Malo&travelmode=driving',
     key: 'ferry'
   }
 ];

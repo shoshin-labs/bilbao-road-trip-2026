@@ -1,20 +1,20 @@
 # France & Bilbao Road Trip 2026
 
-Public-safe static trip HQ for Tom and Sam's September 2026 road trip from Jersey to Bilbao via La Rochelle and Bordeaux.
+Public-safe static trip HQ for Tom and Sam's September 2026 road trip from Jersey to Bilbao via La Rochelle and Bordeaux, starting and ending in Jersey.
 
 ## Scope
 
 - Fixed ferry/date summary, without private booking reference.
 - Driving legs and route logic.
-- Accommodation shortlist for La Rochelle, Bilbao, and Bordeaux.
-- Strong emphasis on terrace/outdoor space plus parking.
+- A complete itinerary with confirmed stays only.
+- Strong emphasis on the confirmed bases, route flow, and practical day planning.
 - Live links are search/official leads; availability and prices must be verified before booking.
 
 ## Files
 
 - `index.html` — single-page trip HQ
 - `styles.css` — responsive visual design
-- `script.js` — filters, expandable cards, checklist persistence, copy button
+- `script.js` — dynamic card rendering, checklist persistence, copy button
 
 ## Verify locally
 

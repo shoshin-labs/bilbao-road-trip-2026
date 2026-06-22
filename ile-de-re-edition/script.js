@@ -31,11 +31,11 @@ const dayCards = [
   {
     city: 'Bilbao',
     day: 'Sun 6 Sep',
-    title: 'Drive south, unpack, pick an easy first evening.',
-    summary: 'The drive is the task. Bilbao can stay light until you land.',
-    bullets: ['Leave La Rochelle early', 'Lunch in Bayonne, then keep rolling south', 'Choose pintxos, a river walk, or an early night'],
-    cta: 'Open La Rochelle → Bilbao route',
-    href: 'https://www.google.com/maps/dir/?api=1&origin=Novotel+La+Rochelle+Centre&destination=Jose+Luis+Goioaga+Etorbidea+22+Altzaga&travelmode=driving',
+    title: 'Drive south, park once, then keep the first evening light.',
+    summary: 'The drive is the task. Aim for Arenal Parking, walk into Casco Viejo, and let Bilbao start gently.',
+    bullets: ['Leave La Rochelle early', 'Lunch in Bayonne, then keep rolling south', 'Park at Arenal, wheel the bags in, then choose pintxos or an early night'],
+    cta: 'Open La Rochelle → Bilbao parking route',
+    href: 'https://www.google.com/maps/dir/?api=1&origin=Novotel+La+Rochelle+Centre&destination=Arenal+Parking+Bilbao&travelmode=driving',
     secondaryCta: 'Open Bayonne lunch stop',
     secondaryHref: 'https://www.google.com/maps/dir/?api=1&origin=Novotel+La+Rochelle+Centre&destination=Bayonne&travelmode=driving',
     key: 'road'
@@ -102,7 +102,7 @@ const dayCards = [
     summary: 'This is the shorter hop after Bilbao: one clean drive, park once, and let Bordeaux stay walkable.',
     bullets: ['Leave Bilbao after breakfast', 'Arrive in Bordeaux in the afternoon', 'Choose a river walk, market browse, or easy evening'],
     cta: 'Open Bilbao → Bordeaux route',
-    href: 'https://www.google.com/maps/dir/?api=1&origin=Jose+Luis+Goioaga+Etorbidea+22+Altzaga&destination=Novotel+Bordeaux+Centre+Ville&travelmode=driving',
+    href: 'https://www.google.com/maps/dir/?api=1&origin=Arenal+Parking+Bilbao&destination=Novotel+Bordeaux+Centre+Ville&travelmode=driving',
     key: 'city'
   },
   {

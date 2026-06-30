@@ -5,10 +5,10 @@ A static trip HQ for Tom and Sam’s Jersey → Bilbao road trip, with Bilbao at
 ## Run locally
 
 ```bash
-python3 -m http.server 8080
+./serve.sh
 ```
 
-Then open http://localhost:8080
+The script auto-picks a free local port starting from 8093 and prints the URL.
 
 ## Files
 
